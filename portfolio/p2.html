@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>止于圆</title>
+<title>Circle’s End</title>
 <style>
 @font-face {
   font-family: 'Caveat';
@@ -16,7 +16,7 @@
 <style>
 
 /* ═══════════════════════════════════════════
-   DESIGN TOKENS  — 统一设计系统
+   DESIGN TOKENS  — UNIFIED DESIGN SYSTEM
 ═══════════════════════════════════════════ */
 :root{
   /* Color */
@@ -564,7 +564,7 @@ footer{
 .sheet-body::-webkit-scrollbar{width:3px}
 .sheet-body::-webkit-scrollbar-thumb{background:var(--line);border-radius:2px}
 
-/* 内容居中容器 */
+/* Centered content container */
 .m-wrap{
   max-width:1100px;
   margin:0 auto;
@@ -611,7 +611,7 @@ footer{
 .m-ul li::before{
   content:'·';position:absolute;left:4px;color:var(--ink3);font-weight:700;
 }
-/* 三栏用户/情景/竞品 */
+/* Three-column users / scenarios / competitors */
 .usc-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   gap:16px;margin:var(--sp-sm) 0 var(--sp-lg);
@@ -628,7 +628,7 @@ footer{
   border-bottom:1.5px solid rgba(26,26,24,.1);
   flex-shrink:0;margin-bottom:12px;
 }
-/* 记事板图片区 — 自包含，不溢出 */
+/* Pinboard image area — self-contained, no overflow */
 .pin-board{
   display:flex;gap:8px;width:100%;
   justify-content:center;align-items:flex-start;
@@ -644,7 +644,7 @@ footer{
   object-fit:contain;
 }
 .pin-img:hover{transform:rotate(0deg) scale(1.05)!important;}
-/* 竞品截图区 — 两张并排，logo贴左上角 */
+/* Competitor screenshot area — two side by side, logo pinned to the top left */
 .comp-shots{
   display:flex;gap:8px;margin-bottom:6px;flex-shrink:0;
 }
@@ -671,7 +671,7 @@ footer{
   padding:3px;object-fit:contain;
   box-shadow:0 1px 4px rgba(0,0,0,.18);
 }
-/* 竞品文字区 */
+/* Competitor text area */
 .comp-block{ margin-bottom:24px; }
 .comp-name{
   font-size:15px;font-weight:700;color:#000;margin:0 0 8px;
@@ -685,7 +685,7 @@ footer{
   margin:6px 0 3px;
 }
 .comp-pro,.comp-con{color:var(--ink3);}
-/* 编号列表 — 实心小圆 */
+/* Numbered list — solid dots */
 .m-ol{
   list-style:none;padding:0;margin:0 0 4px;
 }
@@ -829,7 +829,7 @@ footer{
 }
 
 /* ═══════════════════════════════════════════
-   PHONE MOCKUP  (芽芽圈 screens)
+   PHONE MOCKUP  (Bud Loop screens)
 ═══════════════════════════════════════════ */
 .phones{
   display:flex;gap:var(--sp-md);margin:var(--sp-md) 0;
@@ -1055,7 +1055,7 @@ body::after{
 }
 
 
-/* ── 调研访谈：访谈照片 ── */
+/* ── Research interviews: interview photos ── */
 .itv-row{
   display:flex;gap:14px;margin-bottom:24px;align-items:stretch;
 }
@@ -1068,7 +1068,7 @@ body::after{
 .itv-img{
   width:100%;height:auto;display:block;flex:1;object-fit:cover;
 }
-/* 访谈角标 */
+/* Interview badge */
 .itv-badge{
   position:absolute;top:10px;left:10px;
   display:inline-block;
@@ -1087,12 +1087,12 @@ body::after{
 }
 .itv-date{font-size:11px;color:rgba(0,0,0,.38);letter-spacing:.02em;}
 .itv-name{font-size:13px;font-weight:600;color:var(--ink1);}
-/* ── 图表占位 ── */
+/* ── Chart placeholder ── */
 .itv-charts-placeholder{
   background:rgba(0,0,0,.025);border-radius:10px;
   border:2px dashed rgba(0,0,0,.1);margin-bottom:16px;
 }
-/* ── 总结 ── */
+/* ── Summary ── */
 .itv-summary{
   background:rgba(0,0,0,.025);border-radius:10px;
   padding:16px 20px;border-left:3px solid var(--accent);margin-bottom:8px;
@@ -1100,7 +1100,7 @@ body::after{
 .itv-summary-text{font-size:14px;line-height:1.75;color:var(--ink2);}
 
 
-/* ── 图表图片行 ── */
+/* ── Chart image row ── */
 .chart-img-row{
   display:flex;gap:14px;margin-bottom:16px;align-items:stretch;
 }
@@ -1124,7 +1124,7 @@ body::after{
 }
 
 
-/* ── 中期测试 test-board ── */
+/* ── Midterm testing test-board ── */
 .test-board{
   position:relative;
   background:#fff;
@@ -1139,7 +1139,7 @@ body::after{
   padding:12px 4px 16px;
   overflow:hidden;
 }
-/* 等比缩放，等高，不超出卡片 */
+/* Scale proportionally, use uniform heights, and stay within the card */
 .test-board .pin-img{
   flex:1 1 0 !important;
   min-width:0 !important;
@@ -1156,16 +1156,16 @@ body::after{
 .test-sub-row{
   display:flex;gap:24px;margin-top:24px;align-items:flex-start;
 }
-/* 左列：两张小图交叉叠放 */
+/* Left column: two small images overlapping crosswise */
 .test-sub-left{
   flex:1;min-width:0;
   display:flex;flex-direction:column;align-items:flex-start;
 }
-/* 右列：升级大图 */
+/* Right column: upgraded large image */
 .test-sub-right{
   flex:2;min-width:0;
 }
-/* wrap：钉子 + 倾斜 */
+/* Wrap: pushpin + tilt */
 .test-sub-img-wrap{
   width:55%;
   position:relative;
@@ -1179,7 +1179,7 @@ body::after{
   box-shadow:0 1px 3px rgba(0,0,0,.28);
   z-index:2;
 }
-/* 第一张：靠左，向左倾 */
+/* First image: left-aligned, tilted left */
 .test-sub-left .test-sub-img-wrap:first-child{
   align-self:flex-start;
   transform:rotate(-5deg);
@@ -1187,14 +1187,14 @@ body::after{
   z-index:1;
   margin-bottom:-28px;
 }
-/* 第二张：靠右，向右倾，压上 */
+/* Second image: right-aligned, tilted right, overlapping */
 .test-sub-left .test-sub-img-wrap:last-child{
   align-self:flex-end;
   transform:rotate(4.5deg);
   transform-origin:right bottom;
   z-index:2;
 }
-/* 记事板小图 */
+/* Pinboard thumbnail */
 .test-sub-img{
   display:block;width:100%;height:auto;
   background:#fff;
@@ -1203,7 +1203,7 @@ body::after{
   box-shadow:0 3px 14px rgba(0,0,0,.15),0 1px 3px rgba(0,0,0,.08);
   box-sizing:border-box;
 }
-/* 升级大图：无衬底，完整显示 */
+/* Upgraded large image: no backing, shown in full */
 .test-sub-right .test-sub-img-wrap{
   width:100%;
 }
@@ -1227,20 +1227,20 @@ body::after{
   box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
-/* ── 初期架构 pin-wall ── */
+/* ── Early architecture pin-wall ── */
 .pinwall{
   padding:8px 4px 4px;
   display:flex;flex-direction:column;gap:28px;
   overflow:visible;
 }
-/* 散落行（流程1/2/3）*/
+/* Scattered row (flow 1/2/3) */
 .pinwall-row-scatter{
   display:flex;gap:0;align-items:flex-start;
   justify-content:center;
   overflow:visible;
   padding:16px 0 24px;
 }
-/* 底部行（信息架构+lofi）*/
+/* Bottom row (information architecture + lo-fi) */
 .pinwall-row{
   display:flex;gap:20px;align-items:flex-end;
 }
@@ -1276,7 +1276,7 @@ body::after{
   border-radius:2px;
 }
 
-/* lofi / 无衬底 pin-photo */
+/* lo-fi / no-backing pin-photo */
 .pin-photo--plain{
   background:transparent;
   padding:0;
@@ -1406,7 +1406,7 @@ const vidph=(t,thumb,yt)=>{const ytUrl=yt||'https://youtu.be/CJ0dhJxfUqA';return
 ═══════════════════════════════════════════ */
 
 const P={
-/* ── 止于圆 ── */
+/* ── Circle’s End ── */
 p2:`
 <style>
 .sticky-notes{display:flex;gap:28px;margin:36px 0 20px;align-items:flex-start;}
@@ -1423,7 +1423,7 @@ p2:`
 .sticky:hover{transform:rotate(0deg) translateY(-6px);box-shadow:4px 14px 32px rgba(0,0,0,.30),0 0 28px rgba(174,195,230,.60),0 0 52px rgba(160,185,220,.28);z-index:2;}
 .sticky-title{font-size:13px;font-weight:700;color:#1A1A18;margin-bottom:10px;letter-spacing:-.01em;flex-shrink:0;}
 .sticky-body{font-size:12px;color:rgba(26,26,24,.78);line-height:1.8;flex:1;}
-/* ── 图片暗色卡片 ── */
+/* ── Dark image card ── */
 .img-dark-card{
   background:#1A1A18;border-radius:10px;padding:16px;margin:12px 0;
   box-shadow:0 2px 8px rgba(0,0,0,.4);
@@ -1438,67 +1438,67 @@ p2:`
 .bm-overlay{position:absolute;inset:0;pointer-events:none;}
 
 </style>
-<p class="m-cat">交互装置 · Arduino · 社会议题</p>
-<h2 class="m-title">止于圆</h2>
-<p class="m-lead">该作品旨在探讨中国社会中普遍存在的"……以后就好了"这一心态。作品将人们对美好未来的无限憧憬，与现实中循环往复的困境形成尖锐矛盾，引发观者对"延迟满足"的深刻反思。</p>
-<p class="m-p" style="margin-top:1.2em">装置的核心理念是：我们穷尽一生去追寻一个遥远的"彼岸"，将当下的挣扎视为通往幸福的必经之路。然而，人生的旅程并非是一条线性的航线，而是一次无止境的漂泊。我们所期待的"上岸"，或许只是一个永恒的循环，最终又回到起点。那我们又该如何在"没有终点的当下"好好活着？</p>
+<p class="m-cat">Interactive Installation · Arduino · Social Issue</p>
+<h2 class="m-title">Circle’s End</h2>
+<p class="m-lead">This work explores the pervasive Chinese social mindset of “things will get better later.” By placing people’s limitless yearning for a better future in sharp tension with the cyclical predicaments of reality, it invites profound reflection on “delayed gratification.”</p>
+<p class="m-p" style="margin-top:1.2em">The core concept of the installation is this: we spend our entire lives pursuing a distant “other shore,” viewing present struggles as a necessary path to happiness. Yet life’s journey is not a linear voyage but an endless drift. The “coming ashore” we anticipate may be only an eternal cycle that ultimately returns to its starting point. How, then, can we live well in the “present without an endpoint”?</p>
 
 ${rule()}
-<h3 class="m-h3">调研与思考</h3>
+<h3 class="m-h3">Research and Reflection</h3>
 <div class="sticky-notes rv">
   <div class="sticky">
-    <p class="sticky-title">无尽的循环 · 在荒诞中漂泊</p>
-    <p class="sticky-body">我的生活，乃至我母亲、朋友、老师的生活，都像一场永不停止的循环。我们像钟摆在"痛苦"与"无聊"间往复，像猴子一遍遍地捞取水中倒影，疲惫不堪却又不得不继续，只因心中还存着对"以后会好"的微光。这是一种混杂着期待与空虚的复杂状态，一种在希望中被反复重置的心理困境。正如等待戈多所提醒的：也许明天就会好起来了。但是消极的等待没有任何结果。</p>
+    <p class="sticky-title">Endless Cycle · Drifting Through Absurdity</p>
+    <p class="sticky-body">My life, as well as the lives of my mother, friends, and teachers, feels like an endless cycle. Like a pendulum, we swing between “pain” and “boredom”; like monkeys repeatedly scooping at reflections in water, we are exhausted yet compelled to continue, sustained only by a faint glimmer that “things will get better later.” It is a complex state that mingles anticipation and emptiness, a psychological predicament repeatedly reset by hope. As <i>Waiting for Godot</i> reminds us: perhaps tomorrow will get better. But passive waiting produces no results.</p>
   </div>
   <div class="sticky">
-    <p class="sticky-title">自我规训的凝视</p>
-    <p class="sticky-body">福柯的理论告诉我们，最大的权力并非来自强制，而是来自内化的"凝视"。我们正是被这种无形的视线所塑造。我们以社会所定义的未来的成功为模板，不断审视、规训当下的自己。"凝视者消失，但每个人都在被凝视中自我规训"，那个看不见的凝视者其实就是我们自己，它让我们相信，只有牺牲当下的幸福，才能换取未来的成功。</p>
+    <p class="sticky-title">The Self-Disciplining Gaze</p>
+    <p class="sticky-body">Foucault’s theory tells us that the greatest power comes not from coercion, but from the internalized “gaze.” We are shaped precisely by this invisible scrutiny. Using socially defined future success as a template, we continually examine and discipline our present selves. “The watcher disappears, yet everyone disciplines themselves while being watched.” That invisible watcher is, in fact, ourselves; it makes us believe that only by sacrificing present happiness can we gain future success.</p>
   </div>
   <div class="sticky">
-    <p class="sticky-title">叙事的力量</p>
-    <p class="sticky-body">如何面对漂流？导演李安在《少年派的奇幻漂流》中曾提出一个深刻的问题：面对残忍的现实，我们是否能选择一个更美好的故事去相信？也许我们无法停止漂流，但我们可以选择如何讲述自己的漂流。就像那场印度空难中，威亚斯一家在多年的等待后，终于迎来团聚和新生活，却在飞机坠毁时全部离世。当终点永远缺席，我们该如何生活？李安的回答是：我们需要叙事，不然我们的生活就会像π一样继续下去，因为等待彼岸可能只是一个故事，而叙事本身，才是我们面对无止境漂流的意义。</p>
+    <p class="sticky-title">The Power of Narrative</p>
+    <p class="sticky-body">How should we confront drifting? In <i>Life of Pi</i>, director Ang Lee posed a profound question: faced with brutal reality, can we choose to believe in a better story? We may not be able to stop drifting, but we can choose how to tell the story of our own drift. Consider the Vyas family in the Indian air disaster: after years of waiting, they finally reunited and began a new life, only to all die in a plane crash. When the destination is forever absent, how should we live? Ang Lee’s answer is this: we need narrative. Otherwise, our lives will continue like π, because waiting for the other shore may be only a story, while narrative itself is what gives meaning to our confrontation with endless drifting.</p>
   </div>
 </div>
 
 ${rule()}
-<h3 class="m-h3">头脑风暴</h3>
+<h3 class="m-h3">Brainstorming</h3>
 <div class="img-dark-card rv">
-<img class="bm-img" src="images/p2/p2_a5cefeb2d2b7.webp" alt="头脑风暴">
+<img class="bm-img" src="images/p2/p2_a5cefeb2d2b7.webp" alt="Brainstorming">
 </div>
 
 ${rule()}
-<h3 class="m-h3">草稿</h3>
+<h3 class="m-h3">Drafts</h3>
 <div class="img-dark-card rv">
 <img src="images/p2/p2_952bfa292490.webp" >
 </div>
 
 ${rule()}
-<h3 class="m-h3">制作与实现</h3>
+<h3 class="m-h3">Production and Implementation</h3>
 ${hscroll([
-  ["<img src='images/p2/p2_a1a2cfad461f.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","交互逻辑与实现方案"],
-  ["<img src='images/p2/p2_302357409fc1.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","声音控制继电器、水泵与话题灯代码"],
-  ["<img src='images/p2/p2_e48fa89f762f.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","距离控制主光效代码"],
-  ["<img src='images/p2/p2_1818b964d382.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","传感器、装置与接线1"],
-  ["<img src='images/p2/p2_90b08983df3a.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","传感器、装置与接线2"],
-  ["<img src='images/p2/p2_7069d8b99c61.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","3D打印装置"],
-  ["<img src='images/p2/p2_8f310d9735ce.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","装置实体成品"]
+  ["<img src='images/p2/p2_a1a2cfad461f.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Interaction Logic and Implementation Plan"],
+  ["<img src='images/p2/p2_302357409fc1.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Code for Sound-Controlled Relays, Water Pump, and Thematic Lights"],
+  ["<img src='images/p2/p2_e48fa89f762f.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Code for Distance-Controlled Main Lighting Effects"],
+  ["<img src='images/p2/p2_1818b964d382.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Sensors, Device, and Wiring 1"],
+  ["<img src='images/p2/p2_90b08983df3a.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Sensors, Device, and Wiring 2"],
+  ["<img src='images/p2/p2_7069d8b99c61.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","3D-Printed Device"],
+  ["<img src='images/p2/p2_8f310d9735ce.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Physical Installation Prototype"]
 ])}
 
 ${rule()}
-<h3 class="m-h3">效果展示</h3>
+<h3 class="m-h3">Results Showcase</h3>
 ${hscroll([
-  ["<img src='images/p2/p2_cdba825cf6c1.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","整体效果-初始"],
-  ["<img src='images/p2/p2_f696c46b4009.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","整体效果-有人靠近"],
-  ["<img src='images/p2/p2_2c1df187cf27.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","交互细节"],
-  ["<img src='images/p2/p2_136878bf71f7.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","交互细节-说话"],
-  ["<img src='images/p2/p2_2698c9a8009b.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","灯光细节-距离"],
-  ["<img src='images/p2/p2_04e30b797dcc.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","灯光细节-声音"],
-  ["<img src='images/p2/p2_35e6474d91a0.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","水流细节-滴落与聚集"],
-  ["<img src='images/p2/p2_30124d73dbb5.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","水流细节-流淌与循环"]
+  ["<img src='images/p2/p2_cdba825cf6c1.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Overall Effect — Initial State"],
+  ["<img src='images/p2/p2_f696c46b4009.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Overall Effect — When Someone Approaches"],
+  ["<img src='images/p2/p2_2c1df187cf27.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Interaction Detail"],
+  ["<img src='images/p2/p2_136878bf71f7.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Interaction Detail — Speaking"],
+  ["<img src='images/p2/p2_2698c9a8009b.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Lighting Detail — Distance"],
+  ["<img src='images/p2/p2_04e30b797dcc.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Lighting Detail — Sound"],
+  ["<img src='images/p2/p2_35e6474d91a0.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Water Flow Detail — Dripping and Gathering"],
+  ["<img src='images/p2/p2_30124d73dbb5.webp' style='width:100%;height:100%;object-fit:cover;display:block;'>","Water Flow Detail — Flowing and Cycling"]
 ])}
 
 ${rule()}
-<h3 class="m-h3">展示视频</h3>
+<h3 class="m-h3">Demonstration Video</h3>
 <div class="vid-local rv" onclick="window.open('https://youtu.be/CJ0dhJxfUqA','_blank')">
   <div class="vid-local-poster">
     <img class="vid-local-cover" src="images/p2/p2_1ccb277f35ae.webp" alt="">
@@ -1506,7 +1506,7 @@ ${rule()}
       <div class="vid-play-lrg">
         <svg width="20" height="20" viewBox="0 0 16 16" fill="rgba(255,255,255,.95)"><polygon points="5,3 14,8 5,13"/></svg>
       </div>
-      <span class="vid-tooltip">点击播放</span>
+      <span class="vid-tooltip">Click to Play</span>
     </div>
   </div>
 </div>
