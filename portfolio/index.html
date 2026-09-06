@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 <style>
 
 /* ═══════════════════════════════════════════
-   DESIGN TOKENS  — 统一设计系统
+   DESIGN TOKENS — Unified Design System
 ═══════════════════════════════════════════ */
 :root{
   /* Color */
@@ -556,7 +556,7 @@ footer{
 .sheet-body::-webkit-scrollbar{width:3px}
 .sheet-body::-webkit-scrollbar-thumb{background:var(--line);border-radius:2px}
 
-/* 内容居中容器 */
+/* Centered content container */
 .m-wrap{
   max-width:900px;
   margin:0 auto;
@@ -603,7 +603,7 @@ footer{
 .m-ul li::before{
   content:'·';position:absolute;left:4px;color:var(--ink3);font-weight:700;
 }
-/* 三栏用户/情景/竞品 */
+/* Three columns: user/scenario/competitor */
 .usc-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   gap:16px;margin:var(--sp-sm) 0 var(--sp-lg);
@@ -620,7 +620,7 @@ footer{
   border-bottom:1.5px solid rgba(26,26,24,.1);
   flex-shrink:0;margin-bottom:12px;
 }
-/* 记事板图片区 — 自包含，不溢出 */
+/* Memo-board image area — self-contained, no overflow */
 .pin-board{
   display:flex;gap:8px;width:100%;
   justify-content:center;align-items:flex-start;
@@ -636,7 +636,7 @@ footer{
   object-fit:contain;
 }
 .pin-img:hover{transform:rotate(0deg) scale(1.05)!important;}
-/* 竞品截图区 — 两张并排，logo贴左上角 */
+/* Competitor screenshot area — two side by side, logo pinned to the top left */
 .comp-shots{
   display:flex;gap:8px;margin-bottom:6px;flex-shrink:0;
 }
@@ -663,7 +663,7 @@ footer{
   padding:3px;object-fit:contain;
   box-shadow:0 1px 4px rgba(0,0,0,.18);
 }
-/* 竞品文字区 */
+/* Competitor text area */
 .comp-block{ margin-bottom:24px; }
 .comp-name{
   font-size:15px;font-weight:700;color:#000;margin:0 0 8px;
@@ -677,7 +677,7 @@ footer{
   margin:6px 0 3px;
 }
 .comp-pro,.comp-con{color:var(--ink3);}
-/* 编号列表 — 实心小圆 */
+/* Numbered list — solid dots */
 .m-ol{
   list-style:none;padding:0;margin:0 0 4px;
 }
@@ -804,7 +804,7 @@ footer{
 }
 
 /* ═══════════════════════════════════════════
-   PHONE MOCKUP  (芽芽圈 screens)
+   PHONE MOCKUP (Bud Loop screens)
 ═══════════════════════════════════════════ */
 .phones{
   display:flex;gap:var(--sp-md);margin:var(--sp-md) 0;
@@ -1018,7 +1018,7 @@ body::after{
 }
 
 
-/* ── 调研访谈：访谈照片 ── */
+/* ── Research interviews: interview photos ── */
 .itv-row{
   display:flex;gap:14px;margin-bottom:24px;align-items:stretch;
 }
@@ -1031,7 +1031,7 @@ body::after{
 .itv-img{
   width:100%;height:auto;display:block;flex:1;object-fit:cover;
 }
-/* 访谈角标 */
+/* Interview corner label */
 .itv-badge{
   position:absolute;top:10px;left:10px;
   display:inline-block;
@@ -1050,12 +1050,12 @@ body::after{
 }
 .itv-date{font-size:11px;color:rgba(0,0,0,.38);letter-spacing:.02em;}
 .itv-name{font-size:13px;font-weight:600;color:var(--ink1);}
-/* ── 图表占位 ── */
+/* ── Chart placeholder ── */
 .itv-charts-placeholder{
   background:rgba(0,0,0,.025);border-radius:10px;
   border:2px dashed rgba(0,0,0,.1);margin-bottom:16px;
 }
-/* ── 总结 ── */
+/* ── Summary ── */
 .itv-summary{
   background:rgba(0,0,0,.025);border-radius:10px;
   padding:16px 20px;border-left:3px solid var(--accent);margin-bottom:8px;
@@ -1063,7 +1063,7 @@ body::after{
 .itv-summary-text{font-size:14px;line-height:1.75;color:var(--ink2);}
 
 
-/* ── 图表图片行 ── */
+/* ── Chart image row ── */
 .chart-img-row{
   display:flex;gap:14px;margin-bottom:16px;align-items:stretch;
 }
@@ -1087,7 +1087,7 @@ body::after{
 }
 
 
-/* ── 中期测试 test-board ── */
+/* ── Midterm testing test-board ── */
 .test-board{
   position:relative;
   background:#fff;
@@ -1102,7 +1102,7 @@ body::after{
   padding:12px 4px 16px;
   overflow:hidden;
 }
-/* 等比缩放，等高，不超出卡片 */
+/* Scale proportionally, maintain equal height, and do not exceed the card */
 .test-board .pin-img{
   flex:1 1 0 !important;
   min-width:0 !important;
@@ -1119,16 +1119,16 @@ body::after{
 .test-sub-row{
   display:flex;gap:24px;margin-top:24px;align-items:flex-start;
 }
-/* 左列：两张小图交叉叠放 */
+/* Left column: two small images overlapping diagonally */
 .test-sub-left{
   flex:1;min-width:0;
   display:flex;flex-direction:column;align-items:flex-start;
 }
-/* 右列：升级大图 */
+/* Right column: enlarged image */
 .test-sub-right{
   flex:2;min-width:0;
 }
-/* wrap：钉子 + 倾斜 */
+/* Wrapper: pin + tilt */
 .test-sub-img-wrap{
   width:55%;
   position:relative;
@@ -1142,7 +1142,7 @@ body::after{
   box-shadow:0 1px 3px rgba(0,0,0,.28);
   z-index:2;
 }
-/* 第一张：靠左，向左倾 */
+/* First: aligned left and tilted left */
 .test-sub-left .test-sub-img-wrap:first-child{
   align-self:flex-start;
   transform:rotate(-5deg);
@@ -1150,14 +1150,14 @@ body::after{
   z-index:1;
   margin-bottom:-28px;
 }
-/* 第二张：靠右，向右倾，压上 */
+/* Second: aligned right, tilted right, and layered on top */
 .test-sub-left .test-sub-img-wrap:last-child{
   align-self:flex-end;
   transform:rotate(4.5deg);
   transform-origin:right bottom;
   z-index:2;
 }
-/* 记事板小图 */
+/* Memo-board small image */
 .test-sub-img{
   display:block;width:100%;height:auto;
   background:#fff;
@@ -1166,7 +1166,7 @@ body::after{
   box-shadow:0 3px 14px rgba(0,0,0,.15),0 1px 3px rgba(0,0,0,.08);
   box-sizing:border-box;
 }
-/* 升级大图：无衬底，完整显示 */
+/* Enlarged image: no backing, displayed in full */
 .test-sub-right .test-sub-img-wrap{
   width:100%;
 }
@@ -1190,20 +1190,20 @@ body::after{
   box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
-/* ── 初期架构 pin-wall ── */
+/* ── Initial architecture pin-wall ── */
 .pinwall{
   padding:8px 4px 4px;
   display:flex;flex-direction:column;gap:28px;
   overflow:visible;
 }
-/* 散落行（流程1/2/3）*/
+/* Scattered rows (flows 1/2/3) */
 .pinwall-row-scatter{
   display:flex;gap:0;align-items:flex-start;
   justify-content:center;
   overflow:visible;
   padding:16px 0 24px;
 }
-/* 底部行（信息架构+lofi）*/
+/* Bottom row (information architecture + lofi) */
 .pinwall-row{
   display:flex;gap:20px;align-items:flex-end;
 }
@@ -1239,7 +1239,7 @@ body::after{
   border-radius:2px;
 }
 
-/* lofi / 无衬底 pin-photo */
+/* lofi / pin-photo without backing */
 .pin-photo--plain{
   background:transparent;
   padding:0;
@@ -1276,84 +1276,84 @@ body::after{
   <div class="hero-inner">
     <div>
       <h1 class="hero-name rv d1">
-        你好，<br>
-        <span class="hero-name-sub">我是 李秋杰</span>
+        Hello,<br>
+        <span class="hero-name-sub">I am Qiujie Li</span>
       </h1>
-      <!-- 实习经历（悬停展开） -->
+      <!-- Internship experience (expands on hover) -->
       <div class="work-exp rv d2">
-        <span class="sec-badge">工作经历</span>
+        <span class="sec-badge">Work Experience</span>
         <div class="work-item">
           <div class="work-summary">
-            <span class="work-company">水滴公司</span>
-            <span class="work-role">AI产品运营</span>
+            <span class="work-company">Waterdrop Inc.</span>
+            <span class="work-role">AI Product Operations</span>
             <span class="work-period">2026.04 – 2026.07</span>
           </div>
           <div class="work-detail">
             <ul>
-              <li><strong>AI 外呼机器人体验优化</strong>：参与水滴保 AI 外呼机器人效果评测，围绕转人工、退保查询、投诉溢出等场景开展听测分析；每类异常抽样 30-40 通电话并输出评测报告，推动 Agent 提示词、模型策略和个性化话术迭代，并参与真人感音色及语言标签训练。</li>
-              <li><strong>复杂业务问题解决</strong>：针对热线投诉溢出问题，结合通话录音与用户舆情，定位退保状态误差、退费金额解释流程等关键原因，协助优化业务话术和 Agent 提示词，并调研情绪识别大模型以提升复杂沟通场景下的 Agent 应对能力。</li>
-              <li><strong>从 0 到 1 的跨境电话 Agent 项目</strong>：参与 “Tinycall” AI 跨语言电话产品。跑通日语餐厅预订、英美酒店沟通 2 个核心场景，负责日语餐厅预订 Agent 提示词撰写、多轮迭代、效果验收及功能测试报告输出。</li>
-              <li><strong>新项目获客与商业化验证</strong>：通过闲鱼渠道进行 “TinyCall” 项目的发帖获客、客户接待和定价调研，获得 30+ 用户咨询并促成 10 余人下单；基于真实市场反馈优化 Agent 提示词、服务话术、场景定位和定价判断。</li>
-              <li><strong>AI 工具搭建</strong>：自主搭建面向新人实习生的飞书 openclaw ，完成机器人部署、API 接入、完整提示词设计和飞书词典检索能力接入，实现公司内部业务知识自动化教学与新人成长支持。</li>
+              <li><strong>AI Outbound Calling Bot Experience Optimization</strong>: Participated in effectiveness evaluations of Waterdrop Insurance's AI outbound calling bot, conducting listening and analysis for scenarios such as escalation to a human agent, policy-surrender inquiries, and complaint overflow. Sampled 30–40 calls for each anomaly type and produced evaluation reports, driving iterations of Agent prompts, model strategies, and personalized scripts; also participated in training human-like voice timbres and language labels.</li>
+              <li><strong>Complex Business Issue Resolution</strong>: Addressed hotline complaint overflow by combining call recordings and user sentiment to identify key causes, including errors in policy-surrender status and the process for explaining refund amounts. Helped optimize business scripts and Agent prompts, and researched emotion-recognition large language models to strengthen the Agent's ability to handle complex communication scenarios.</li>
+              <li><strong>0-to-1 Cross-Border Calling Agent Project</strong>: Participated in “Tinycall,” an AI multilingual calling product. Validated two core scenarios—Japanese restaurant reservations and hotel communications in the UK and US—and was responsible for writing prompts for the Japanese restaurant reservation Agent, multiple rounds of iteration, performance acceptance, and functional test reports.</li>
+              <li><strong>New-Project Customer Acquisition and Commercial Validation</strong>: Used Xianyu to publish posts for customer acquisition, engage customers, and research pricing for the “TinyCall” project. Received 30+ user inquiries and converted more than 10 orders; refined Agent prompts, service scripts, scenario positioning, and pricing decisions based on real market feedback.</li>
+              <li><strong>AI Tool Development</strong>: Independently built a Feishu OpenClaw for onboarding new interns, completing bot deployment, API integration, full prompt design, and Feishu dictionary-search integration to automate instruction in internal business knowledge and support new-hire development.</li>
             </ul>
           </div>
         </div>
         <div class="work-item">
           <div class="work-summary">
-            <span class="work-company">理想汽车</span>
-            <span class="work-role">交互设计</span>
+            <span class="work-company">Li Auto Inc.</span>
+            <span class="work-role">Interaction Design</span>
             <span class="work-period">2025.12 – 2026.04</span>
           </div>
           <div class="work-detail">
             <ul>
-              <li><strong>从 0 到 1 的销售Agent项目</strong>：针对一线销售信息分散、重复劳动等痛点，参与 AI 驱动的销售助手产品设计和交互设计，3个月完成从产品 Demo 原型到一期设计交付的全过程。对特定交互进行视觉及动效方案探索、vibecoding 搭建产品介绍官网。</li>
-              <li><strong>AI 提效</strong>： 探索各AI设计及原型工具，将 AI 工作流与传统工作流深度结合。运用 Claude code 等工具搭建部门内部的设计系统skill，提升AI产品原型过程中的品牌规范。</li>
-              <li><strong>全端 App 迭代</strong>： 负责销售 App 在手机端、Pad 工作端、PC 管理端的功能迭代与升级，确保全国零售体系内的工作效率和品牌一致性。</li>
-              <li><strong>运营视觉支持</strong>： 兼顾高质量运营设计，包括勋章及活动海报等。并向运营伙伴进行AI工具图像辅助工作的分享。</li>
+              <li><strong>0-to-1 Sales Agent Project</strong>: Addressed pain points such as fragmented frontline sales information and repetitive work by participating in the product and interaction design of an AI-powered sales assistant. Completed the full process from a product-demo prototype to the first-phase design handoff in three months. Explored visual and motion approaches for specific interactions and built the product-introduction website through vibe coding.</li>
+              <li><strong>AI Efficiency Enhancement</strong>: Explored AI design and prototyping tools, deeply integrating AI workflows with traditional workflows. Used tools such as Claude Code to build an internal design-system skill for the department, strengthening brand standards during AI product prototyping.</li>
+              <li><strong>Cross-Platform App Iteration</strong>: Led feature iterations and upgrades for the sales app across mobile, Pad work, and PC management platforms, ensuring operational efficiency and brand consistency across the nationwide retail system.</li>
+              <li><strong>Operational Visual Support</strong>: Delivered high-quality operational design, including badges and event posters, and shared AI-tool image-assistance practices with operations partners.</li>
             </ul>
           </div>
         </div>
         <div class="work-item">
           <div class="work-summary">
-            <span class="work-company">追光动画</span>
-            <span class="work-role">衍生品运营</span>
+            <span class="work-company">Light Chaser Animation Studios</span>
+            <span class="work-role">Merchandise Operations</span>
             <span class="work-period">2024.06 – 2024.09</span>
           </div>
           <div class="work-detail">
             <ul>
-              <li><strong>IP 商业化推进</strong>：深度参与电影《白蛇·浮生》《聊斋·兰若寺》等的衍生品研发，协调导演组与外包，确保产品设计符合原著又具备传播和商业可能性。</li>
-              <li><strong>全品类产品研制</strong>：参与并落地了设定集、盲盒、卡牌、积木在内的多维度产品线，通过对材质、工艺和设计细节的把控，提升 IP 的长尾商业价值。</li>
-              <li><strong>跨界联名对接</strong>：与快消、文旅、文创等外部合作方紧密链接，将动画视觉元素转化为实物产品或推广活动，成功扩大追光动画 IP 的品牌覆盖面与大众感知度。</li>
+              <li><strong>IP Commercialization Advancement</strong>: Deeply participated in merchandise research and development for films including <em>White Snake: Afloat</em> and <em>Curious Tales of a Temple</em>, coordinating the directing team and outsourced partners to ensure product designs remained faithful to the source material while offering promotional and commercial potential.</li>
+              <li><strong>Full-Category Product Development</strong>: Participated in and launched a multidimensional product line including art books, blind boxes, cards, and building blocks. Enhanced the IP's long-tail commercial value through control of materials, production techniques, and design details.</li>
+              <li><strong>Cross-Industry Co-Brand Collaboration</strong>: Worked closely with external partners in fast-moving consumer goods, cultural tourism, and cultural and creative industries, transforming animated visual elements into physical products or promotional campaigns and successfully expanding Light Chaser Animation IP's brand reach and public awareness.</li>
             </ul>
           </div>
         </div>
         <div class="work-item">
           <div class="work-summary">
-            <span class="work-company">湖南卫视</span>
-            <span class="work-role">综艺服化导演</span>
+            <span class="work-company">Hunan Television</span>
+            <span class="work-role">Variety Show Costume and Styling Director</span>
             <span class="work-period">2025.02 – 2025.03</span>
           </div>
           <div class="work-detail">
             <ul>
-              <li><strong>视觉统筹</strong>：负责《乘风 2025》综艺舞台及 MV 的服装造型规划，在极短制作周期内协同导演组、嘉宾及外部合作方，确保视觉方案在高强度录制中的完美呈现。</li>
-              <li><strong>反馈管理</strong>：组织并主持多轮艺人试装，针对复杂的舞台动态需求快速收集反馈并调整，锻炼了极强的快速跟进与调整能力。</li>
-              <li><strong>现场突发预案与执行</strong>：负责拍摄现场的视觉品控，针对造型破损、录制进度变动等突发状况提供即时方案，协调跨部门资源确保录制流程不中断。</li>
+              <li><strong>Visual Coordination</strong>: Led costume and styling planning for the variety-show stage and music video of <em>Ride the Wind 2025</em>. Coordinated the directing team, guests, and external partners within an extremely short production cycle to ensure flawless execution of the visual concept during intensive recording.</li>
+              <li><strong>Feedback Management</strong>: Organized and led multiple artist fittings, rapidly gathering feedback and making adjustments for complex dynamic stage requirements, developing strong follow-through and adaptation skills.</li>
+              <li><strong>On-Site Contingency Planning and Execution</strong>: Managed visual quality control on set, providing immediate solutions for unexpected situations such as damaged styling and changes to the recording schedule, while coordinating cross-functional resources to keep recording uninterrupted.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- 教育经历 -->
+      <!-- Education -->
       <div class="edu-line rv d3">
-        <span class="sec-badge">教育经历</span>
+        <span class="sec-badge">Education</span>
         <span class="edu-item">
-          <span class="edu-degree">本科</span>
-          <span class="edu-school">中南大学 · 视觉传达设计</span>
+          <span class="edu-degree">Bachelor's Degree</span>
+          <span class="edu-school">Central South University · Visual Communication Design</span>
         </span>
         <span class="edu-sep">｜</span>
         <span class="edu-item">
-          <span class="edu-degree">硕士</span>
-          <span class="edu-school">香港大学 · 创新设计与技术</span>
+          <span class="edu-degree">Master's Degree</span>
+          <span class="edu-school">The University of Hong Kong · Innovation Design and Technology</span>
         </span>
       </div>
     </div>
@@ -1362,7 +1362,7 @@ body::after{
 
 <!-- scroll hint between hero and works -->
 <div class="scroll-hint scroll-hint-between">
-  <span>向下</span>
+  <span>Scroll Down</span>
   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 1v10M2 8l4 4 4-4"/></svg>
 </div>
 
@@ -1370,60 +1370,60 @@ body::after{
 <section id="works">
   <div class="works-head rv">
     <div>
-      <p class="sec-tag">精选作品</p>
-      <h2 class="sec-h2">四个项目</h2>
+      <p class="sec-tag">Selected Work</p>
+      <h2 class="sec-h2">Four Projects</h2>
     </div>
     <span class="works-count">04 Projects</span>
   </div>
 
   <div class="grid">
 
-    <!-- 1 芽芽圈 -->
+    <!-- 1 Bud Loop -->
     <div class="card rv d1" data-p="p1">
       <div class="card-thumb">
-        <img class="card-img" src="images/index/index_216d85d97091.webp" alt="芽芽圈">
+        <img class="card-img" src="images/index/index_216d85d97091.webp" alt="Bud Loop">
         <div class="card-badges">
-          <span class="badge-title">芽芽圈</span>
-          <span class="badge-desc">给婴幼儿父母的二手用品购物app</span>
+          <span class="badge-title">Bud Loop</span>
+          <span class="badge-desc">A secondhand-shopping app for parents of infants and toddlers</span>
         </div>
       </div>
-      <span class="badge-cta">点击查看作品详情</span>
+      <span class="badge-cta">View Project Details</span>
     </div>
 
-    <!-- 2 止于圆 -->
+    <!-- 2 Circle’s End -->
     <div class="card rv d2" data-p="p2">
       <div class="card-thumb">
-        <img class="card-img" src="images/index/index_fa46db812a8f.webp" alt="止于圆">
+        <img class="card-img" src="images/index/index_fa46db812a8f.webp" alt="Circle’s End">
         <div class="card-badges">
-          <span class="badge-title">止于圆</span>
-          <span class="badge-desc">arduino交互装置</span>
+          <span class="badge-title">Circle’s End</span>
+          <span class="badge-desc">Arduino interactive installation</span>
         </div>
       </div>
-      <span class="badge-cta">点击查看作品详情</span>
+      <span class="badge-cta">View Project Details</span>
     </div>
 
-    <!-- 4 虫噪 -->
+    <!-- 4 The Buzz -->
     <div class="card rv d1" data-p="p3">
       <div class="card-thumb">
-        <img class="card-img" src="images/index/index_b202befcb312.webp" alt="虫噪">
+        <img class="card-img" src="images/index/index_b202befcb312.webp" alt="The Buzz">
         <div class="card-badges">
-          <span class="badge-title">虫噪</span>
-          <span class="badge-desc">通过processing实现的交互小游戏</span>
+          <span class="badge-title">The Buzz</span>
+          <span class="badge-desc">Interactive mini-game made with Processing</span>
         </div>
       </div>
-      <span class="badge-cta">点击查看作品详情</span>
+      <span class="badge-cta">View Project Details</span>
     </div>
 
-    <!-- 6 工作经历 -->
+    <!-- 6 Work Experience -->
     <div class="card rv d2" data-p="p4">
       <div class="card-thumb">
-        <img class="card-img" src="images/index/index_11a1887ba5ec.webp" alt="理想汽车 Sales Agent">
+        <img class="card-img" src="images/index/index_11a1887ba5ec.webp" alt="Li Auto Sales Agent">
         <div class="card-badges">
-          <span class="badge-title">理想汽车</span>
-          <span class="badge-desc">交互设计</span>
+          <span class="badge-title">Li Auto</span>
+          <span class="badge-desc">Interaction Design</span>
         </div>
       </div>
-      <span class="badge-cta">点击查看作品详情</span>
+      <span class="badge-cta">View Project Details</span>
     </div>
 
   </div>
@@ -1432,7 +1432,7 @@ body::after{
 <!-- ═══ CONTACT ══════════════════════════════════════════ -->
 <section id="contact">
   <div class="contact-info rv d1">
-    <span class="sec-badge">联系方式</span>
+    <span class="sec-badge">Contact</span>
     <div class="contact-row">
       <svg width="18" height="18" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H10C10.55 2 11 2.45 11 3V9C11 9.55 10.55 10 10 10H2C1.45 10 1 9.55 1 9V3C1 2.45 1.45 2 2 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 3L6 6.5L1 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>qiujie552@163.com</span>
@@ -1527,7 +1527,7 @@ function openM(html){
       const kids=[...hs.children];
       kids.forEach(k=>hs.appendChild(k.cloneNode(true)));
     });
-    // 弹窗内 rv 元素（动态注入，需手动触发显示）
+    // .rv elements in the modal (dynamically injected; must be manually triggered to display)
     document.querySelectorAll('#sb .rv').forEach((el,i)=>{
       setTimeout(()=>el.classList.add('v'), 60+i*60);
     });
