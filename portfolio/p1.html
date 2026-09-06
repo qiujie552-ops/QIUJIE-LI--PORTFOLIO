@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>芽芽圈</title>
+<title>Bud Loop</title>
 <style>
 @font-face {
   font-family: 'Caveat';
@@ -16,7 +16,7 @@
 <style>
 
 /* ═══════════════════════════════════════════
-   DESIGN TOKENS  — 统一设计系统
+   DESIGN TOKENS  — Unified Design System
 ═══════════════════════════════════════════ */
 :root{
   /* Color */
@@ -564,7 +564,7 @@ footer{
 .sheet-body::-webkit-scrollbar{width:3px}
 .sheet-body::-webkit-scrollbar-thumb{background:var(--line);border-radius:2px}
 
-/* 内容居中容器 */
+/* Centered content container */
 .m-wrap{
   max-width:1100px;
   margin:0 auto;
@@ -611,7 +611,7 @@ footer{
 .m-ul li::before{
   content:'·';position:absolute;left:4px;color:var(--ink3);font-weight:700;
 }
-/* 三栏用户/情景/竞品 */
+/* Three-column layout: users / scenarios / competitors */
 .usc-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   gap:16px;margin:var(--sp-sm) 0 var(--sp-lg);
@@ -628,7 +628,7 @@ footer{
   border-bottom:1.5px solid rgba(26,26,24,.1);
   flex-shrink:0;margin-bottom:12px;
 }
-/* 记事板图片区 — 自包含，不溢出 */
+/* Pinboard image area — self-contained, no overflow */
 .pin-board{
   display:flex;gap:8px;width:100%;
   justify-content:center;align-items:flex-start;
@@ -644,7 +644,7 @@ footer{
   object-fit:contain;
 }
 .pin-img:hover{transform:rotate(0deg) scale(1.05)!important;}
-/* 竞品截图区 — 两张并排，logo贴左上角 */
+/* Competitor screenshot area — two images side by side, logos pinned top left */
 .comp-shots{
   display:flex;gap:8px;margin-bottom:6px;flex-shrink:0;
 }
@@ -671,7 +671,7 @@ footer{
   padding:3px;object-fit:contain;
   box-shadow:0 1px 4px rgba(0,0,0,.18);
 }
-/* 竞品文字区 */
+/* Competitor text area */
 .comp-block{ margin-bottom:24px; }
 .comp-name{
   font-size:15px;font-weight:700;color:#000;margin:0 0 8px;
@@ -685,7 +685,7 @@ footer{
   margin:6px 0 3px;
 }
 .comp-pro,.comp-con{color:var(--ink3);}
-/* 编号列表 — 实心小圆 */
+/* Numbered list — solid dots */
 .m-ol{
   list-style:none;padding:0;margin:0 0 4px;
 }
@@ -812,7 +812,7 @@ footer{
 }
 
 /* ═══════════════════════════════════════════
-   PHONE MOCKUP  (芽芽圈 screens)
+   PHONE MOCKUP  (Bud Loop screens)
 ═══════════════════════════════════════════ */
 .phones{
   display:flex;gap:var(--sp-md);margin:var(--sp-md) 0;
@@ -847,7 +847,7 @@ footer{
 .phone-mini{flex:1;height:38px;background:var(--bg2);border-radius:6px}
 
 /* ═══════════════════════════════════════════
-   设计交付 DELIVERY
+   DESIGN DELIVERABLES
 ═══════════════════════════════════════════ */
 .dlv-wrap{display:flex;flex-direction:column;gap:20px;padding:4px 0;}
 .dlv-row2{display:flex;gap:16px;}
@@ -885,7 +885,7 @@ footer{
 .dlv-simg img.paused{transform:scale(1.12);box-shadow:0 12px 40px rgba(0,0,0,.18);}
 
 
-/* ── 最终设计悬浮 Logo 角标 ── */
+/* ── Final-design floating logo badge ── */
 .dlv-logo-badge{
   position:absolute;top:16px;left:16px;z-index:10;
   width:68px;height:68px;border-radius:6.77px;
@@ -1089,7 +1089,7 @@ body::after{
 }
 
 
-/* ── 调研访谈：访谈照片 ── */
+/* ── Research interviews: interview photos ── */
 .itv-row{
   display:flex;gap:14px;margin-bottom:24px;align-items:stretch;
 }
@@ -1102,7 +1102,7 @@ body::after{
 .itv-img{
   width:100%;height:auto;display:block;flex:1;object-fit:cover;
 }
-/* 访谈角标 */
+/* Interview badge */
 .itv-badge{
   position:absolute;top:10px;left:10px;
   display:inline-block;
@@ -1121,12 +1121,12 @@ body::after{
 }
 .itv-date{font-size:11px;color:rgba(0,0,0,.38);letter-spacing:.02em;}
 .itv-name{font-size:13px;font-weight:600;color:var(--ink1);}
-/* ── 图表占位 ── */
+/* ── Chart placeholder ── */
 .itv-charts-placeholder{
   background:rgba(0,0,0,.025);border-radius:10px;
   border:2px dashed rgba(0,0,0,.1);margin-bottom:16px;
 }
-/* ── 总结 ── */
+/* ── Summary ── */
 .itv-summary{
   background:rgba(0,0,0,.025);border-radius:10px;
   padding:16px 20px;border-left:3px solid var(--accent);margin-bottom:8px;
@@ -1134,7 +1134,7 @@ body::after{
 .itv-summary-text{font-size:14px;line-height:1.75;color:var(--ink2);}
 
 
-/* ── 图表图片行 ── */
+/* ── Chart image row ── */
 .chart-img-row{
   display:flex;gap:14px;margin-bottom:16px;align-items:stretch;
 }
@@ -1158,7 +1158,7 @@ body::after{
 }
 
 
-/* ── 中期测试 test-board ── */
+/* ── Mid-stage testing test-board ── */
 .test-board{
   position:relative;
   background:#fff;
@@ -1173,7 +1173,7 @@ body::after{
   padding:12px 4px 16px;
   overflow:hidden;
 }
-/* 等比缩放，等高，不超出卡片 */
+/* Scale proportionally, maintain equal heights, and do not exceed the card */
 .test-board .pin-img{
   flex:1 1 0 !important;
   min-width:0 !important;
@@ -1190,16 +1190,16 @@ body::after{
 .test-sub-row{
   display:flex;gap:24px;margin-top:24px;align-items:flex-start;
 }
-/* 左列：两张小图交叉叠放 */
+/* Left column: two small images overlap diagonally */
 .test-sub-left{
   flex:1;min-width:0;
   display:flex;flex-direction:column;align-items:flex-start;
 }
-/* 右列：升级大图 */
+/* Right column: enlarged image */
 .test-sub-right{
   flex:2;min-width:0;
 }
-/* wrap：钉子 + 倾斜 */
+/* Wrapper: pin + tilt */
 .test-sub-img-wrap{
   width:55%;
   position:relative;
@@ -1213,7 +1213,7 @@ body::after{
   box-shadow:0 1px 3px rgba(0,0,0,.28);
   z-index:2;
 }
-/* 第一张：靠左，向左倾 */
+/* First image: aligned left and tilted left */
 .test-sub-left .test-sub-img-wrap:first-child{
   align-self:flex-start;
   transform:rotate(-5deg);
@@ -1221,14 +1221,14 @@ body::after{
   z-index:1;
   margin-bottom:-28px;
 }
-/* 第二张：靠右，向右倾，压上 */
+/* Second image: aligned right, tilted right, and layered on top */
 .test-sub-left .test-sub-img-wrap:last-child{
   align-self:flex-end;
   transform:rotate(4.5deg);
   transform-origin:right bottom;
   z-index:2;
 }
-/* 记事板小图 */
+/* Pinboard thumbnails */
 .test-sub-img{
   display:block;width:100%;height:auto;
   background:#fff;
@@ -1237,7 +1237,7 @@ body::after{
   box-shadow:0 3px 14px rgba(0,0,0,.15),0 1px 3px rgba(0,0,0,.08);
   box-sizing:border-box;
 }
-/* 升级大图：无衬底，完整显示 */
+/* Enlarged image: no backing; fully displayed */
 .test-sub-right .test-sub-img-wrap{
   width:100%;
 }
@@ -1261,13 +1261,13 @@ body::after{
   box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
-/* ── 初期架构 pin-wall ── */
+/* ── Initial architecture pin-wall ── */
 .pinwall{
   padding:8px 4px 4px;
   display:flex;flex-direction:column;gap:28px;
   overflow:visible;
 }
-/* 散落行（流程1/2/3）*/
+/* Scattered rows (flows 1/2/3) */
 .pinwall-row-scatter{
   display:flex;gap:0;align-items:flex-start;
   justify-content:center;
@@ -1275,7 +1275,7 @@ body::after{
   padding:20px 0 36px;
   min-height:300px;
 }
-/* 底部行（信息架构+lofi）*/
+/* Bottom row (information architecture + lo-fi) */
 .pinwall-row{
   display:flex;gap:20px;align-items:flex-end;
 }
@@ -1311,7 +1311,7 @@ body::after{
   border-radius:2px;
 }
 
-/* lofi / 无衬底 pin-photo */
+/* lo-fi / unbacked pin-photo */
 .pin-photo--plain{
   background:transparent;
   padding:0;
@@ -1424,100 +1424,100 @@ const vidph=t=>`<div class="vidph"><div class="vid-play">${iPlay}</div><span cla
 ═══════════════════════════════════════════ */
 
 const P={
-/* ── 芽芽圈 ── */
+/* ── Bud Loop ── */
 p1:`
-<p class="m-cat">UCD 设计 · 移动端 App</p>
-<h2 class="m-title">芽芽圈</h2>
-<p class="m-lead">一个专为20-30岁新生儿父母打造的二手母婴用品交易APP。我观察到育儿路上母婴物品的迅速闲置、价格高昂等痛点。此APP以环保育儿和循环经济为核心理念，为追求科学育儿、高性价比、绿色生活的年轻家庭提供一个安全、便捷、有爱的二手交易空间。</p>
-<p class="m-brand-note"><strong>「芽芽」</strong>代表新生命、成长，<strong>「圈」</strong>代表循环、互助交易圈。<span class="m-slogan">slogan：成长不闲置，爱有新延续。</span></p>
+<p class="m-cat">UCD Design · Mobile App</p>
+<h2 class="m-title">Bud Loop</h2>
+<p class="m-lead">A secondhand marketplace app for baby and children’s products, tailored to 20–30-year-old parents of newborns. I observed pain points in parenting, such as baby and children’s products quickly becoming unused and their high prices. With eco-friendly parenting and a circular economy at its core, this app provides young families seeking evidence-based parenting, value for money, and green living with a safe, convenient, and caring space for secondhand trading.</p>
+<p class="m-brand-note"><strong>“Bud”</strong> represents new life and growth; <strong>“Loop”</strong> represents reuse, circulation, and a mutually supportive trading community. <span class="m-slogan">Slogan: No Waste in Growth, New Love Takes Its Path.</span></p>
 
 ${rule()}
-<h3 class="m-h3">用户 / 情景 / 竞品</h3>
+<h3 class="m-h3">Users / Scenarios / Competitors</h3>
 
 <div class="usc-grid">
 
-  <!-- 用户 -->
+  <!-- Users -->
   <div class="usc-col">
-    <p class="usc-col-title">目标用户</p>
+    <p class="usc-col-title">Target Users</p>
     <div class="pin-board">
-      <img class="pin-img" src="images/p1/p1_3125b66e7fbe.webp" alt="用户人群"
+      <img class="pin-img" src="images/p1/p1_3125b66e7fbe.webp" alt="Target audience"
            style="width:80%;flex:none;transform:rotate(-2deg);">
     </div>
-    <p class="m-p-meta">人群 · 20–30岁低龄儿童父母，男/女</p>
+    <p class="m-p-meta">Demographic · 20–30-year-old parents of young children, male/female</p>
     <ol class="m-ol">
-      <li>以较低价格购买或售出母婴/儿童用品，减少物品与金钱浪费</li>
-      <li>出售仅用几个月的婴儿车、仅玩过几次的婴幼儿玩具</li>
+      <li>Buy or sell baby and children’s products at lower prices, reducing waste of goods and money</li>
+      <li>Sell strollers used for only a few months and infant/toddler toys played with only a few times</li>
     </ol>
-    <p class="m-p-meta">关注点</p>
+    <p class="m-p-meta">Key Considerations</p>
     <ol class="m-ol">
-      <li>二手物品的安全性、卫生状况、质量</li>
-      <li>与全新产品的价格差异和优惠程度</li>
-      <li>物品原主人提供信息的可信度</li>
-      <li>出物的便捷性</li>
-      <li>售后维权可靠性</li>
+      <li>Safety, hygiene, and quality of secondhand items</li>
+      <li>Price differences and savings compared with new products</li>
+      <li>Trustworthiness of information provided by an item’s previous owner</li>
+      <li>Convenience of listing items for sale</li>
+      <li>Reliability of after-sales support and dispute resolution</li>
     </ol>
   </div>
-  <!-- 情景 -->
+  <!-- Scenarios -->
   <div class="usc-col">
-    <p class="usc-col-title">典型场景</p>
+    <p class="usc-col-title">Typical Scenarios</p>
     <div class="pin-board">
-      <img class="pin-img" src="images/p1/p1_a7075f43b537.webp" alt="情景1"
+      <img class="pin-img" src="images/p1/p1_a7075f43b537.webp" alt="Scenario 1"
            style="transform:rotate(-3.5deg);">
-      <img class="pin-img" src="images/p1/p1_ed59e616f5bd.webp" alt="情景2"
+      <img class="pin-img" src="images/p1/p1_ed59e616f5bd.webp" alt="Scenario 2"
            style="transform:rotate(3deg);">
     </div>
-    <p class="m-p-meta">儿童快速成长期间</p>
+    <p class="m-p-meta">During Periods of Rapid Child Growth</p>
     <ol class="m-ol">
-      <li>衣物、鞋子尺码更新快，物品淘汰速度很快</li>
-      <li>婴儿车、婴儿床使用周期短但价格不菲</li>
-      <li>婴幼儿对玩具兴趣多变，全新购置成本高且易闲置</li>
+      <li>Clothing and shoe sizes change quickly, and items are outgrown fast</li>
+      <li>Strollers and cribs have short use cycles but high prices</li>
+      <li>Infants’ and toddlers’ interest in toys changes frequently; purchasing new is expensive, and items are easily left unused</li>
     </ol>
-    <p class="m-p-meta">品牌门店购物时</p>
+    <p class="m-p-meta">When Shopping in Brand Stores</p>
     <ol class="m-ol">
-      <li>线下门店有心仪物品，但全新商品品牌溢价过高/经费不足</li>
+      <li>Desired items are available in physical shops, but brand premiums for new products are too high / the budget is limited</li>
     </ol>
-    <p class="m-p-meta">旧物赠与</p>
+    <p class="m-p-meta">Giving Away Used Items</p>
     <ol class="m-ol">
-      <li>对同年龄段亲朋好友的孩子进行物品赠与</li>
-      <li>物品瑕疵较大，难以二手出售</li>
+      <li>Give items to the children of friends and relatives in the same age group</li>
+      <li>Items have substantial defects, making them difficult to sell secondhand</li>
     </ol>
   </div>
-  <!-- 竞品 -->
+  <!-- Competitors -->
   <div class="usc-col">
-    <p class="usc-col-title">竞品分析</p>
+    <p class="usc-col-title">Competitor Analysis</p>
     <div class="comp-shots">
       <div class="comp-shot-wrap">
-        <img class="shot" src="images/p1/p1_8ab63679f2f3.webp" alt="多抓鱼截图">
-        <img class="logo-badge" src="images/p1/p1_9660af047ff7.webp" alt="多抓鱼logo">
+        <img class="shot" src="images/p1/p1_8ab63679f2f3.webp" alt="Deja Vu (Duozhuayu) screenshot">
+        <img class="logo-badge" src="images/p1/p1_9660af047ff7.webp" alt="Deja Vu (Duozhuayu) logo">
       </div>
       <div class="comp-shot-wrap">
-        <img class="shot" src="images/p1/p1_7c325a971934.webp" alt="闲鱼截图">
-        <img class="logo-badge" src="images/p1/p1_cefb7b90b381.webp" alt="闲鱼logo">
+        <img class="shot" src="images/p1/p1_7c325a971934.webp" alt="Xianyu screenshot">
+        <img class="logo-badge" src="images/p1/p1_cefb7b90b381.webp" alt="Xianyu logo">
       </div>
     </div>
     <div class="comp-block">
-      <p class="comp-name">多抓鱼</p>
-      <p class="m-p-meta"><span class="comp-label">优点</span></p>
+      <p class="comp-name">Deja Vu (Duozhuayu)</p>
+      <p class="m-p-meta"><span class="comp-label">Strengths</span></p>
       <ol class="m-ol">
-        <li>品类少而明确，平台专业筛选消毒</li>
-        <li>出物便捷，可享购物优惠</li>
+        <li>Categories are limited but clearly defined, with professional platform screening and disinfection</li>
+        <li>Convenient item listing, with shopping discounts available</li>
       </ol>
-      <p class="m-p-meta" style="margin-top:8px;"><span class="comp-label">缺点</span></p>
+      <p class="m-p-meta" style="margin-top:8px;"><span class="comp-label">Weaknesses</span></p>
       <ol class="m-ol">
-        <li>部分品牌不接收，库存常短缺</li>
+        <li>Some brands are not accepted, and inventory is often limited</li>
       </ol>
     </div>
     <div class="comp-block">
-      <p class="comp-name">闲鱼</p>
-      <p class="m-p-meta"><span class="comp-label">优点</span></p>
+      <p class="comp-name">Xianyu</p>
+      <p class="m-p-meta"><span class="comp-label">Strengths</span></p>
       <ol class="m-ol">
-        <li>品类丰富，抽成少，可议价</li>
-        <li>有消费活动</li>
+        <li>Rich assortment, low commissions, and negotiable pricing</li>
+        <li>Consumer promotions are available</li>
       </ol>
-      <p class="m-p-meta" style="margin-top:8px;"><span class="comp-label">缺点</span></p>
+      <p class="m-p-meta" style="margin-top:8px;"><span class="comp-label">Weaknesses</span></p>
       <ol class="m-ol">
-        <li>安全保障和诚信度不可控</li>
-        <li>维权较复杂</li>
+        <li>Safety assurance and trustworthiness are difficult to control</li>
+        <li>Dispute resolution is relatively complex</li>
       </ol>
     </div>
   </div>
@@ -1525,67 +1525,67 @@ ${rule()}
 </div>
 
 ${rule()}
-<h3 class="m-h3">调研访谈</h3>
+<h3 class="m-h3">Research Interviews</h3>
 
 <div class="itv-row">
   <div class="itv-card">
-    <span class="itv-badge">访谈</span>
-    <img class="itv-img" src="images/p1/p1_2ec3d02001e4.webp" alt="28岁年轻妈妈">
+    <span class="itv-badge">Interview</span>
+    <img class="itv-img" src="images/p1/p1_2ec3d02001e4.webp" alt="28-year-old mother">
     <div class="itv-meta">
-      <span class="itv-date">2025年5月17日&nbsp;&nbsp;线上视频</span>
-      <span class="itv-name">28岁年轻妈妈</span>
+      <span class="itv-date">May 17, 2025&nbsp;&nbsp;Online video call</span>
+      <span class="itv-name">28-year-old mother</span>
     </div>
   </div>
   <div class="itv-card">
-    <span class="itv-badge">访谈</span>
-    <img class="itv-img" src="images/p1/p1_eb2fddd2acaa.webp" alt="7岁孩子的34岁父母">
+    <span class="itv-badge">Interview</span>
+    <img class="itv-img" src="images/p1/p1_eb2fddd2acaa.webp" alt="34-year-old parent of a 7-year-old child">
     <div class="itv-meta">
-      <span class="itv-date">2025年5月18日&nbsp;&nbsp;线上通话</span>
-      <span class="itv-name">7岁孩子的34岁父母</span>
+      <span class="itv-date">May 18, 2025&nbsp;&nbsp;Online call</span>
+      <span class="itv-name">34-year-old parent of a 7-year-old child</span>
     </div>
   </div>
   <div class="itv-card">
-    <span class="itv-badge">访谈</span>
-    <img class="itv-img" src="images/p1/p1_4a83362c38f8.webp" alt="经常使用二手购物app的大学生">
+    <span class="itv-badge">Interview</span>
+    <img class="itv-img" src="images/p1/p1_4a83362c38f8.webp" alt="University student who frequently uses secondhand shopping apps">
     <div class="itv-meta">
-      <span class="itv-date">2025年5月23日&nbsp;&nbsp;面谈</span>
-      <span class="itv-name">经常使用二手购物app的大学生</span>
+      <span class="itv-date">May 23, 2025&nbsp;&nbsp;In-person interview</span>
+      <span class="itv-name">University student who frequently uses secondhand shopping apps</span>
     </div>
   </div>
 </div>
 
 <div class="chart-img-row">
   <div class="chart-img-card">
-    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_8b06add6871f.webp" alt="图表"></div>
-    <p class="chart-img-cap">您是否愿意接受平台通过收服务费方式，对二手物品进行专业品牌筛选？</p>
+    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_8b06add6871f.webp" alt="Chart"></div>
+    <p class="chart-img-cap">Would you accept the platform conducting professional brand screening of secondhand items by charging a service fee?</p>
   </div>
   <div class="chart-img-card">
-    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_4c381c5d71b5.webp" alt="图表"></div>
-    <p class="chart-img-cap">您对出售闲置物品"以旧换新 / 一键转卖"功能（平台提供规范流程，含商品描述、照片上传模板）的需求程度？</p>
+    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_4c381c5d71b5.webp" alt="Chart"></div>
+    <p class="chart-img-cap">How much do you need a “trade-in / one-click resale” feature for selling unused items (the platform provides a standardized process, including product descriptions and photo-upload templates)?</p>
   </div>
   <div class="chart-img-card">
-    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_bad32236fd68.webp" alt="图表"></div>
-    <p class="chart-img-cap">在购买二手物品时，新旧商品价格的对比信息对您决策的帮助程度？</p>
+    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_bad32236fd68.webp" alt="Chart"></div>
+    <p class="chart-img-cap">How helpful is price-comparison information for new and used products to your decision-making when buying secondhand items?</p>
   </div>
 </div>
 
 <div class="chart-img-row">
   <div class="chart-img-card">
-    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_2a943fa044cd.webp" alt="图表"></div>
-    <p class="chart-img-cap">您希望APP根据孩子哪些方面匹配个性化商品推荐？</p>
+    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_2a943fa044cd.webp" alt="Chart"></div>
+    <p class="chart-img-cap">Which aspects of your child would you like the app to use to match personalized product recommendations?</p>
   </div>
   <div class="chart-img-card">
-    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_3b80bf960eb9.webp" alt="图表"></div>
-    <p class="chart-img-cap">以下哪些信息对您购买母婴用品的决策最有帮助？</p>
+    <div class="chart-img-wrap"><img class="chart-img" src="images/p1/p1_3b80bf960eb9.webp" alt="Chart"></div>
+    <p class="chart-img-cap">Which of the following information is most helpful to your decision-making when purchasing baby and children’s products?</p>
   </div>
 </div>
 
 <div class="itv-summary">
-  <p class="itv-summary-text"><span class="hl">核心功能方向初步验证。</span>省钱爽感、商品透明化、安全质检、便捷操作等核心设计方向均获用户积极认可，与最初洞察一致。问卷数据进一步表明，用户最看重省钱实用、物品安全与出售便捷，而对专家指导和社群功能的需求偏低。后续将据此调整功能权重，优先完善用户最在意的核心体验，并扩大调研范围以覆盖更多元的用户声音。</p>
+  <p class="itv-summary-text"><span class="hl">Initial validation of the core feature direction.</span> Users responded positively to core design directions including the satisfaction of saving money, product transparency, safety inspections, and convenient operations, in line with the initial insights. Survey data further indicate that users place the greatest importance on practical savings, item safety, and ease of selling, while demand for expert guidance and community features is lower. The next step is to adjust feature priorities accordingly, first refining the core experiences users care about most and expanding the research scope to include more diverse user voices.</p>
 </div>
 
 ${rule()}
-<h3 class="m-h3">初期架构</h3>
+<h3 class="m-h3">Initial Architecture</h3>
 
 <img src="images/p1/p1_63220506b087.webp" style="width:100%;height:auto;display:block;border-radius:8px;" class="rv">
 
@@ -1593,30 +1593,30 @@ ${rule()}
 </div>
 
 ${rule()}
-<h3 class="m-h3">中期测试</h3>
+<h3 class="m-h3">Mid-Stage Testing</h3>
 <div class="test-board rv d1">
-  <div class="test-badge">用户可用性测试</div>
+  <div class="test-badge">User Usability Testing</div>
   <div class="pin-board">
       <img class="pin-img rv d1" src="images/p1/p1_c798404a79e3.webp"
-           style="transform:rotate(-3deg);z-index:1" alt="测试1">
+           style="transform:rotate(-3deg);z-index:1" alt="Test 1">
       <img class="pin-img rv d2" src="images/p1/p1_a6140ec73cdc.webp"
-           style="transform:rotate(2.5deg);z-index:2" alt="测试2">
+           style="transform:rotate(2.5deg);z-index:2" alt="Test 2">
       <img class="pin-img rv d3" src="images/p1/p1_098227d19f49.webp"
-           style="transform:rotate(-1.5deg);z-index:3" alt="测试3">
+           style="transform:rotate(-1.5deg);z-index:3" alt="Test 3">
       <img class="pin-img rv d4" src="images/p1/p1_01eb30a0bcf4.webp"
-           style="transform:rotate(3deg);z-index:4" alt="测试4">
+           style="transform:rotate(3deg);z-index:4" alt="Test 4">
       <img class="pin-img rv d1" src="images/p1/p1_a9aa977824ed.webp"
-           style="transform:rotate(-2deg);z-index:5" alt="测试5">
+           style="transform:rotate(-2deg);z-index:5" alt="Test 5">
       <img class="pin-img rv d2" src="images/p1/p1_09522884e07a.webp"
-           style="transform:rotate(1.5deg);z-index:6" alt="测试6">
+           style="transform:rotate(1.5deg);z-index:6" alt="Test 6">
   </div>
 </div>
 
 <img src="images/p1/p1_1bc8dbe6eb19.webp" style="width:100%;height:auto;display:block;border-radius:8px;margin-top:24px;" class="rv">
 ${rule()}
-<h3 class="m-h3">最终设计</h3>
+<h3 class="m-h3">Final Design</h3>
 <div class="dlv-hscroll-wrap hscroll-wrap">
-  <img class="dlv-logo-badge" src="images/p1/p1_bd649817efb9.webp" alt="芽芽圈">
+  <img class="dlv-logo-badge" src="images/p1/p1_bd649817efb9.webp" alt="Bud Loop">
   <div class="hscroll dlv-hscroll" style="animation-duration:24s">
       <div class="dlv-simg"><img src="images/p1/p1_660fed3c8706.webp" alt="1"></div>
       <div class="dlv-simg"><img src="images/p1/p1_98ce4decdf03.webp" alt="2"></div>
@@ -1647,13 +1647,13 @@ window.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.hscroll').forEach(hs => {
         [...hs.children].forEach(k => hs.appendChild(k.cloneNode(true)));
       });
-      // dlv-hscroll: JS 驱动平滑加速滚动
+      // dlv-hscroll: JavaScript-powered smooth accelerated scrolling
       document.querySelectorAll('.dlv-hscroll-wrap').forEach(wrap => {
         const strip = wrap.querySelector('.dlv-hscroll');
         if (!strip) return;
-        strip.style.animation = 'none'; // 禁用 CSS 动画，改由 JS 驱动
-        const NORMAL = 1.4;  // px/frame 正常速度
-        const SLOW   = 0.7;  // px/frame 悬停减速
+        strip.style.animation = 'none'; // Disable the CSS animation and use JavaScript instead
+        const NORMAL = 1.4;  // px/frame normal speed
+        const SLOW   = 0.7;  // px/frame slow down on hover
         let speed    = NORMAL;
         let pos      = 0;
         let hovering = false;
@@ -1662,7 +1662,7 @@ window.addEventListener('DOMContentLoaded', () => {
         function tick() {
           if (!paused) {
             const target = hovering ? SLOW : NORMAL;
-            speed += (target - speed) * 0.05; // 平滑插值
+            speed += (target - speed) * 0.05; // Smooth interpolation
             pos   -= speed;
             if (Math.abs(pos) >= halfW()) pos += halfW();
             strip.style.transform = `translateX(${pos}px)`;
