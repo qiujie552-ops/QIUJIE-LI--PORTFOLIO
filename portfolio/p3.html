@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>虫噪</title>
+<title>The Buzz</title>
 <style>
 @font-face {
   font-family: 'Caveat';
@@ -101,27 +101,27 @@ nav.scrolled{box-shadow:0 1px 0 var(--line)}
 /* GRAIN */
 body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:128px}
 
-/* 图片卡（浅色版） */
+/* Image Cards (Light Theme) */
 .img-dark-card{background:var(--bg2);border-radius:10px;padding:16px;margin:12px 0;box-shadow:0 2px 8px rgba(0,0,0,.05);border:1.5px solid var(--line);transition:border-color .3s ease,box-shadow .3s ease}
 .img-dark-card:hover{border-color:#aaa;box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .img-dark-card img{width:100%;height:auto;display:block;border-radius:6px}
 
-/* 视觉草稿图片 */
+/* Visual Draft Image */
 .sketch-img-card{margin:var(--sp-sm) 0;background:var(--white);border-radius:var(--r-md);border:1px solid var(--line);padding:12px;cursor:zoom-in;transition:transform .35s cubic-bezier(.22,.68,0,1.2),box-shadow .35s ease}
 .sketch-img-card:hover{transform:scale(1.025) translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.12)}
 .sketch-img-card img{width:72%;height:auto;display:block;margin:0 auto;border-radius:6px;transition:filter .35s ease}
 .sketch-img-card:hover img{filter:brightness(1.04) contrast(1.02)}
 
-/* THEME LAYOUT — 左右两栏 */
+/* THEME LAYOUT — Two Columns */
 .theme-layout{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:var(--sp-md) 0;align-items:start}
-/* 左侧两个文字卡片 */
+/* Left: Two Text Cards */
 .theme-cards{display:flex;flex-direction:column;gap:14px}
 .theme-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r-md);padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.05);transition:box-shadow .25s,transform .25s}
 .theme-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.1);transform:translateY(-2px)}
 .theme-card-year{font-size:11px;letter-spacing:.08em;color:var(--ink3);font-weight:500;margin-bottom:6px;text-transform:uppercase}
 .theme-card-title{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:10px;letter-spacing:-.01em}
 .theme-card-body{font-size:12.5px;line-height:1.8;color:var(--ink3)}
-/* 右侧图片区 — 参考样图交叉叠放 */
+/* Right: Reference Images Overlapped in a Cross Layout */
 .theme-photos{position:relative;height:320px}
 .theme-photo{position:absolute;background:#fff;padding:8px 8px 22px;border-radius:4px;box-shadow:0 6px 24px rgba(0,0,0,.14),0 1px 4px rgba(0,0,0,.08);cursor:pointer;transition:transform .32s cubic-bezier(.18,.18,.21,.98),box-shadow .32s,z-index 0s}
 .theme-photo::before{content:'';position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#f5f5f5,#bbb);box-shadow:0 1px 3px rgba(0,0,0,.28);z-index:1}
@@ -130,7 +130,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;o
 .theme-photo:nth-child(2){width:52%;right:2%;top:60px;transform:rotate(3.5deg);z-index:2}
 .theme-photo:hover{transform:rotate(0deg) scale(1.05) translateY(-8px) !important;box-shadow:0 16px 40px rgba(0,0,0,.2),0 2px 6px rgba(0,0,0,.1);z-index:10 !important}
 
-/* 纯文字内容区 */
+/* Text-Only Content Area */
 .prose-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r-md);margin:var(--sp-lg) 0 0;overflow:hidden}
 .prose-section{padding:22px 24px 20px}
 .prose-divider{height:1px;background:var(--line);margin:0}
@@ -141,7 +141,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;o
 .prose-item-label{display:block;font-size:11px;font-weight:700;color:var(--ink);letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px;opacity:.55}
 .prose-item-body{display:block;font-size:13px;line-height:1.8;color:var(--ink3)}
 
-/* VIDEO PLAYER（浅色版） */
+/* VIDEO PLAYER (Light Theme) */
 .vid-local{max-width:560px;margin:36px auto 0;border-radius:12px;overflow:hidden;border:1.5px solid var(--line);box-shadow:0 4px 20px rgba(0,0,0,.07)}
 .vid-local-poster{position:relative;display:flex;align-items:center;justify-content:center;height:300px;cursor:pointer;overflow:hidden;background:var(--bg2)}
 .vid-local-cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s ease,filter .35s}
@@ -203,180 +203,161 @@ function hscroll(items){
 
 const rule=()=>`<div class="m-rule"></div>`;
 
-const P={
-p3:`
-<p class="m-cat">装置小游戏 · 交互视觉 · Processing</p>
-<h2 class="m-title">虫噪</h2>
-<p class="m-lead">本作品旨在批判日益猖獗的网络偷拍与非法传播，其灵感来自maskpark事件等社会热点。我将蚊蝇的嗡嗡声与这一社会现象相联系，以一种持续、令人不安的噪音来象征那些伺机而动的信息病毒和道德蛀虫。</p>
-<p class="m-p">作品的核心是观众的主动参与。通过他们的行动，这种噪音得以<span class="hl">短暂平息</span>，借此引发对反抗、行动与代价的深刻思考。</p>
-
-${rule()}
-<h3 class="m-h3">主题介绍</h3>
-<div class="theme-layout rv">
-  <!-- 左侧：两个文字卡片 -->
-  <div class="theme-cards">
-    <div class="theme-card">
-      <p class="theme-card-year">韩国 · 2020年</p>
-      <p class="theme-card-title">N号房事件</p>
-      <p class="theme-card-body">通过Telegram聊天群组运营，以胁迫手段迫使女性（含未成年人）拍摄性剥削内容，最小受害者仅2岁。<br><br>分层运作模式：创建者"godgod"（高中生）、扩大者"watchman"、收费运营者"博士"，会员费最高达150万韩元约8700元人民币。<br><br>26万注册用户参与观看传播，被指"围观即共犯"，凸显群体性道德失范。</p>
-    </div>
-    <div class="theme-card">
-      <p class="theme-card-year">中国 · 2025年</p>
-      <p class="theme-card-title">Maskpark事件</p>
-      <p class="theme-card-body">该组织下设多个子群，订阅人数超过10万人，总触达人数或达90万之巨，覆盖内容包括女性试衣、如厕、洗浴、家居生活等高度隐私场景，甚至不乏未成年人、熟人亲属的受害画面。<br><br>它不仅传播偷拍内容，还存在专门的群组提供贩卖针孔摄像头业务，教唆如何将摄像头安装到各类日用品中，其中最大的群组订阅人数超过22万人。</p>
-    </div>
-  </div>
-  <!-- 右侧：两张交叉叠放图片 -->
-  <div class="theme-photos">
-    <div class="theme-photo">
-      <img src="images/p3/p3_ef64fd44ce41.webp" alt="参考图1">
-    </div>
-    <div class="theme-photo">
-      <img src="images/p3/p3_91cb19b88739.webp" alt="参考图2">
-    </div>
-  </div>
-</div>
-
-<div class="prose-card rv d1">
-
-<div class="prose-section">
-  <p class="prose-h4">偷拍的冒犯性：它如何一步步剥夺尊严</p>
-  <p class="prose-lead">偷拍行为的冒犯性，远超法律条文所定义的"隐私侵犯"。它在精神与社会层面，对受害者造成了更深远的伤害。</p>
-  <div class="prose-item">
-    <span class="prose-item-label">从"人"到"物"的降维</span>
-    <span class="prose-item-body">偷拍行为将一个完整的人，简化为欲望投射的"客体"，彻底剥夺了其主体性。这种物化不仅是对尊严的践踏，更是对人格的根本性否定。</span>
-  </div>
-  <div class="prose-item">
-    <span class="prose-item-label">蔓延的恐惧</span>
-    <span class="prose-item-body">当偷拍事件被曝光，一种普遍性的不安全感随之蔓延。它让人们对公共和私密空间都产生怀疑，这种无处不在的焦虑和恐惧，本身就是一种巨大的精神暴力。</span>
-  </div>
-  <div class="prose-item">
-    <span class="prose-item-label">永恒的伤害</span>
-    <span class="prose-item-body">在互联网时代，被偷拍的影像一旦上传，便意味着伤害的无限化。每一次的传播、观看与交易，都像一把刀子，不断地凌迟着受害者的尊严。这种伤害无法停止，受害者只能永远生活在被凝视的阴影之下。</span>
-  </div>
-</div>
-
-<div class="prose-divider"></div>
-
-<div class="prose-section">
-  <p class="prose-h4">法律困境：被隐藏的性骚扰</p>
-  <p class="prose-lead">"Maskpark事件"中的偷拍行为，尽管在法律上被明确定义为性骚扰，但要让其付出法律代价却举步维艰。《民法典》明确将"违背他人意愿"作为性骚扰的核心要件，并以言语、文字、图像、肢体等多种方式进行界定。这在理论上为性骚扰的认定提供了清晰标准。然而在司法实践中，性骚扰取证难是一个全球性难题，这背后是制度性的障碍：</p>
-  <div class="prose-item">
-    <span class="prose-item-label">证据的天然隐蔽性</span>
-    <span class="prose-item-body">性骚扰行为往往发生在私密或隐蔽场合，受害者通常在不知情的情况下被伤害，这导致直接证据的缺失。</span>
-  </div>
-  <div class="prose-item">
-    <span class="prose-item-label">受害者承担举证重担</span>
-    <span class="prose-item-body">根据"谁主张，谁举证"的原则，受害者必须自行收集证据，且证明标准极高，这对本就处于弱势的受害者来说几乎是不可能完成的任务。</span>
-  </div>
-  <div class="prose-item">
-    <span class="prose-item-label">社会文化的二次伤害</span>
-    <span class="prose-item-body">"受害者有罪论"等文化偏见，让受害者心生恐惧、羞耻，不敢公开站出来维权，这使得证据更难被固定。</span>
-  </div>
-  <div class="prose-item">
-    <span class="prose-item-label">制度性缺陷</span>
-    <span class="prose-item-body">法律虽有规定，但缺乏专门的执行机构，证据规则也未能根据性骚扰案件的特殊性进行调整，这些都构成了维权路上的重重障碍。</span>
-  </div>
-</div>
-
-</div>
-
-${rule()}
-<h3 class="m-h3">视觉草稿</h3>
-<div class="sketch-img-card rv d1">
-  <img src="images/p3/p3_6667c8630721.webp" alt="视觉草稿">
-</div>
-
-${hscroll([])}
-
-${rule()}
-<h3 class="m-h3">效果实现</h3>
-<div class="theme-layout rv d1">
-  <!-- 左侧：文字卡片 -->
-  <div class="theme-cards">
-    <div class="theme-card">
-      <p class="theme-card-title">输入</p>
-      <p class="theme-card-year" style="color:#AA1313">压力传感器 RP-S40 击打</p>
-      <p class="theme-card-body">作品的叙事由观众的"击打"次数驱动。从开始的试探性反抗（少量击打），到后来的愤怒反击（密集击打），最终以爆炸和重置收尾，每一次拍打都是一次情绪的释放。苍蝇拍和蚊蝇图案作为视觉引导，让观众的行为更具目的性。</p>
-    </div>
-    <div class="theme-card">
-      <p class="theme-card-title">技术实现</p>
-      <p class="theme-card-body">压力传感器是核心输入设备。当传感器表面被拍打，压力值升高，Arduino 程序将其判定为一次有效击打，以此推进叙事。</p>
-    </div>
-  </div>
-  <!-- 右侧：两张交叉叠放图片 -->
-  <div class="theme-photos">
-    <div class="theme-photo">
-      <img src="images/p3/p3_f8f4c64ec7f3.webp" alt="">
-    </div>
-    <div class="theme-photo">
-      <img src="images/p3/p3_bd74ad7af07a.webp" alt="">
-    </div>
-  </div>
-</div>
-<div class="theme-card rv d2" style="margin-top:14px">
-  <p class="theme-card-title">递进逻辑</p>
-  <p class="theme-card-body">状态 0（0次）：初始线条，缓慢游动，像虫蝇飞舞的路径。<br>状态 1（1–4次）：画面抖动增强，线条平滑变换，暗示骚扰加剧。<br>状态 2（5次）：所有线条向中心收缩，形成线团，达到第一次视觉高潮。<br>状态 3（6–9次）：形成的图形在画面中游动、抖动，象征骚扰的持续。<br>状态 4（10次）：图形猛烈收缩后爆炸，画面进入旋转碎片阶段。<br>状态 5（11次）：所有元素被汇聚并清除，进入重置过渡动画。</p>
-</div>
-<div class="theme-layout rv d3">
-  <!-- 左侧：文字卡片 -->
-  <div class="theme-cards">
-    <div class="theme-card">
-      <p class="theme-card-title">视觉输出</p>
-      <p class="theme-card-body"><strong>马赛克背景：</strong>随着击打次数增加，马赛克点会变大，变得更加模糊，暗示观众正接近真相却又看不清楚。背景还有马赛克光电闪烁刺激视野，暗示负面事件的不断发生。<br><br><strong>线条与图形：</strong>画面中的线条和不规则图形根据击打次数和快慢的变化而改变，从游动到聚集，再到爆炸和旋转，构成完整的视觉叙事。<br><br><strong>小三角形：</strong>根据拍打的力度和次数，小三角形会被随机移除，形成视觉上的"清除"效果。</p>
-    </div>
-    <div class="theme-card">
-      <p class="theme-card-title">听觉输出</p>
-      <p class="theme-card-body"><strong>背景音：</strong>持续的"嗡嗡声"在初期营造压抑氛围，在后期则随着画面的净化而逐渐减弱直至消失。<br><br><strong>点击音效：</strong>每次有效的击打都会触发不同的音效，提供即时的声音反馈，增强交互的满足感。<br><br><strong>终结音效：</strong>在关键的叙事节点，如第11次重置时，会播放独特的音效（激光音），进一步强化叙事的戏剧性。</p>
-    </div>
-  </div>
-  <!-- 右侧：三张交叉叠放图片 -->
-  <div class="theme-photos theme-photos-3">
-    <div class="theme-photo">
-      <img src="images/p3/p3_e618b881aeaf.webp" alt="">
-    </div>
-    <div class="theme-photo">
-      <img src="images/p3/p3_bdf70963992f.webp" alt="">
-    </div>
-    <div class="theme-photo">
-      <img src="images/p3/p3_a7086fd27de0.webp" alt="">
-    </div>
-  </div>
-</div>
-
-
-
-${rule()}
-<h3 class="m-h3">细节展示</h3>
-${hscroll([
-  [`<img src="images/p3/p3_1e938da7ec7f.webp" alt="部分代码-核心逻辑">`, "部分代码-核心逻辑"],
-  [`<img src="images/p3/p3_8ca7e270abf0.webp" alt="交互动作-拍打">`, "交互动作-拍打"],
-  [`<img src="images/p3/p3_8d45398b40e9.webp" alt="交互过程二">`, "交互过程二"],
-  [`<img src="images/p3/p3_6df60b310e94.webp" alt="交互过程一">`, "交互过程一"],
-  [`<img src="images/p3/p3_9ac2457af0e7.webp" alt="装置道具">`, "装置道具"],
-  [`<img src="images/p3/p3_2fa2caff2561.webp" alt="最终视觉效果二">`, "最终视觉效果二"],
-  [`<img src="images/p3/p3_18c09242fd45.webp" alt="最终视觉效果一">`, "最终视觉效果一"]
-])}
-
-
-
-${rule()}
-<h3 class="m-h3">展示视频</h3>
-<div class="vid-local rv" onclick="window.open('https://youtu.be/oHNaWbywsi8','_blank')">
-  <div class="vid-local-poster">
-    <img class="vid-local-cover" src="images/p3/p3_361037e69f79.webp" alt="">
-    <div class="vid-local-overlay">
-      <div class="vid-play-lrg">
-        <svg width="20" height="20" viewBox="0 0 16 16" fill="rgba(26,26,24,.85)"><polygon points="5,3 14,8 5,13"/></svg>
+const P={ p3:`
+  <p class="m-cat">Interactive Installation Game · Interactive Visuals · Processing</p>
+  <h2 class="m-title">The Buzz</h2>
+  <p class="m-lead">This work critiques the increasingly rampant practice of surreptitious online filming and illegal distribution. It draws inspiration from socially prominent incidents such as the Maskpark incident. I connect the buzzing of mosquitoes and flies to this social phenomenon, using a persistent, unsettling buzz to symbolize the opportunistic information viruses and moral parasites at work.</p>
+  <p class="m-p">At the core of the work is the audience’s active participation. Through their actions, the buzz is <span class="hl">briefly quieted</span>, prompting deeper reflection on resistance, action, and their costs.</p>
+  ${rule()}
+  <h3 class="m-h3">Theme Introduction</h3>
+  <div class="theme-layout rv">
+    <!-- Left: Two Text Cards -->
+    <div class="theme-cards">
+      <div class="theme-card">
+        <p class="theme-card-year">South Korea · 2020</p>
+        <p class="theme-card-title">Nth Room Case</p>
+        <p class="theme-card-body">Operating through Telegram chat groups, the perpetrators coerced women, including minors, into producing sexually exploitative material; the youngest victim was only two years old.<br><br>Hierarchical operating model: the creator, “godgod” (a high-school student); the promoter, “watchman”; and the paid operator, “Doctor”. Membership fees reached as high as 1.5 million KRW, approximately RMB 8,700.<br><br>260,000 registered users participated in viewing and distributing the material. The claim that “spectators are accomplices” exposed a collective moral failure.</p>
       </div>
-      <span class="vid-tooltip">点击播放</span>
+      <div class="theme-card">
+        <p class="theme-card-year">China · 2025</p>
+        <p class="theme-card-title">Maskpark Incident</p>
+        <p class="theme-card-body">The organization maintained multiple subgroups with more than 100,000 subscribers and a possible total reach of 900,000. Its material covered highly private situations, including women changing clothes, using the restroom, bathing, and living at home; it also included footage of minors, acquaintances, and relatives.<br><br>It not only distributed surreptitiously filmed material but also had dedicated groups selling pinhole cameras and instructing users on how to install them in everyday items. Its largest group had more than 220,000 subscribers.</p>
+      </div>
+    </div>
+    <!-- Right: Two Images Overlapped in a Cross Layout -->
+    <div class="theme-photos">
+      <div class="theme-photo">
+        <img src="images/p3/p3_ef64fd44ce41.webp" alt="Reference image 1">
+      </div>
+      <div class="theme-photo">
+        <img src="images/p3/p3_91cb19b88739.webp" alt="Reference image 2">
+      </div>
     </div>
   </div>
-</div>
-
-`,
-};
-const PKEY='p3';
+  <div class="prose-card rv d1">
+    <div class="prose-section">
+      <p class="prose-h4">The Offensiveness of Surreptitious Filming: How It Systematically Strips Away Dignity</p>
+      <p class="prose-lead">The offensiveness of surreptitious filming far exceeds the “invasion of privacy” defined by legal provisions. On psychological and social levels, it inflicts more far-reaching harm on victims.</p>
+      <div class="prose-item">
+        <span class="prose-item-label">From “Person” to “Object”</span>
+        <span class="prose-item-body">Surreptitious filming reduces a whole person to an “object” onto which desire is projected, completely depriving them of subjectivity. This objectification is not only a trampling of dignity but also a fundamental denial of personhood.</span>
+      </div>
+      <div class="prose-item">
+        <span class="prose-item-label">Spreading Fear</span>
+        <span class="prose-item-body">When such incidents are exposed, a pervasive sense of insecurity spreads. It makes people suspicious of both public and private spaces; this ever-present anxiety and fear is, in itself, a profound form of psychological violence.</span>
+      </div>
+      <div class="prose-item">
+        <span class="prose-item-label">Enduring Harm</span>
+        <span class="prose-item-body">In the internet age, once surreptitiously filmed images are uploaded, the harm becomes limitless. Every act of distribution, viewing, and trading is like a blade continually cutting away at the victim’s dignity. The harm cannot stop, and victims can only live forever under the shadow of being watched.</span>
+      </div>
+    </div>
+    <div class="prose-divider"></div>
+    <div class="prose-section">
+      <p class="prose-h4">Legal Dilemma: Concealed Sexual Harassment</p>
+      <p class="prose-lead">Although the surreptitious filming in the “Maskpark incident” is clearly defined in law as sexual harassment, holding those responsible legally accountable remains exceedingly difficult. The Civil Code explicitly identifies “against another person’s will” as a core element of sexual harassment and defines it through speech, writing, images, bodily conduct, and other forms. In theory, this provides a clear standard for determining sexual harassment. In judicial practice, however, the difficulty of gathering evidence of sexual harassment is a global challenge, rooted in institutional barriers:</p>
+      <div class="prose-item">
+        <span class="prose-item-label">The Inherent Concealment of Evidence</span>
+        <span class="prose-item-body">Sexual harassment often occurs in private or concealed settings, and victims are usually harmed without their knowledge, resulting in a lack of direct evidence.</span>
+      </div>
+      <div class="prose-item">
+        <span class="prose-item-label">Victims Bear the Burden of Proof</span>
+        <span class="prose-item-body">Under the principle that “whoever asserts must prove,” victims must collect evidence themselves, and the standard of proof is extremely high. For already disadvantaged victims, this is nearly an impossible task.</span>
+      </div>
+      <div class="prose-item">
+        <span class="prose-item-label">Secondary Harm from Social Culture</span>
+        <span class="prose-item-body">Cultural prejudices such as victim-blaming foster fear and shame in victims, deterring them from coming forward publicly to protect their rights and making evidence even harder to preserve.</span>
+      </div>
+      <div class="prose-item">
+        <span class="prose-item-label">Institutional Deficiencies</span>
+        <span class="prose-item-body">Although laws exist, there are no specialized enforcement bodies, and evidentiary rules have not been adjusted for the particular nature of sexual-harassment cases. These shortcomings create repeated obstacles to defending victims’ rights.</span>
+      </div>
+    </div>
+  </div>
+  ${rule()}
+  <h3 class="m-h3">Visual Draft</h3>
+  <div class="sketch-img-card rv d1">
+    <img src="images/p3/p3_6667c8630721.webp" alt="Visual draft">
+  </div>
+  ${hscroll([])}
+  ${rule()}
+  <h3 class="m-h3">Implementation</h3>
+  <div class="theme-layout rv d1">
+    <!-- Left: Text Cards -->
+    <div class="theme-cards">
+      <div class="theme-card">
+        <p class="theme-card-title">Input</p>
+        <p class="theme-card-year" style="color:#AA1313">Force Sensor RP-S40 — Striking</p>
+        <p class="theme-card-body">The work’s narrative is driven by the number of times the audience strikes the sensor. It moves from tentative resistance at the beginning (a few strikes), to angry retaliation later on (rapid strikes), and finally ends with an explosion and reset; every swat is an emotional release. A fly swatter and mosquito-and-fly motifs provide visual guidance, making the audience’s actions more purposeful.</p>
+      </div>
+      <div class="theme-card">
+        <p class="theme-card-title">Technical Implementation</p>
+        <p class="theme-card-body">The force sensor is the core input device. When its surface is struck, the pressure reading rises; the Arduino program registers this as a valid strike and advances the narrative accordingly.</p>
+      </div>
+    </div>
+    <!-- Right: Two Images Overlapped in a Cross Layout -->
+    <div class="theme-photos">
+      <div class="theme-photo">
+        <img src="images/p3/p3_f8f4c64ec7f3.webp" alt="">
+      </div>
+      <div class="theme-photo">
+        <img src="images/p3/p3_bd74ad7af07a.webp" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="theme-card rv d2" style="margin-top:14px">
+    <p class="theme-card-title">Progression Logic</p>
+    <p class="theme-card-body">State 0 (0 strikes): Initial lines drift slowly, like the flight paths of insects.<br>State 1 (1–4 strikes): The image shakes more intensely and the lines shift smoothly, suggesting escalating harassment.<br>State 2 (5 strikes): All lines contract toward the center, forming a tangled mass and reaching the first visual climax.<br>State 3 (6–9 strikes): The resulting shapes drift and shake across the screen, symbolizing the persistence of harassment.<br>State 4 (10 strikes): The shapes contract violently and then explode, sending the screen into a phase of rotating fragments.<br>State 5 (11 strikes): All elements converge and are cleared, entering the reset transition animation.</p>
+  </div>
+  <div class="theme-layout rv d3">
+    <!-- Left: Text Cards -->
+    <div class="theme-cards">
+      <div class="theme-card">
+        <p class="theme-card-title">Visual Output</p>
+        <p class="theme-card-body"><strong>Mosaic Background:</strong> As the number of strikes increases, the mosaic pixels grow larger and blurrier, suggesting that the audience is approaching the truth yet cannot see it clearly. Flickering mosaic lights in the background also stimulate the viewer’s vision, suggesting the continual occurrence of harmful events.<br><br><strong>Lines and Shapes:</strong> The lines and irregular shapes on the screen change with the number and speed of strikes, moving from drifting to gathering, then exploding and rotating to form a complete visual narrative.<br><br><strong>Small Triangles:</strong> Depending on the force and number of swats, small triangles are randomly removed to create a visual “clearing” effect.</p>
+      </div>
+      <div class="theme-card">
+        <p class="theme-card-title">Audio Output</p>
+        <p class="theme-card-body"><strong>Background Sound:</strong> A continuous “buzz” creates a stifling atmosphere at first, then gradually fades and disappears as the imagery is cleansed.<br><br><strong>Click Sound Effects:</strong> Each valid strike triggers a different sound effect, providing immediate auditory feedback and enhancing the satisfaction of interaction.<br><br><strong>Final Sound Effect:</strong> At key narrative moments, such as the eleventh reset, a distinctive sound effect (a laser sound) plays, further heightening the narrative’s drama.</p>
+      </div>
+    </div>
+    <!-- Right: Three Images Overlapped in a Cross Layout -->
+    <div class="theme-photos theme-photos-3">
+      <div class="theme-photo">
+        <img src="images/p3/p3_e618b881aeaf.webp" alt="">
+      </div>
+      <div class="theme-photo">
+        <img src="images/p3/p3_bdf70963992f.webp" alt="">
+      </div>
+      <div class="theme-photo">
+        <img src="images/p3/p3_a7086fd27de0.webp" alt="">
+      </div>
+    </div>
+  </div>
+  ${rule()}
+  <h3 class="m-h3">Detail Views</h3>
+  ${hscroll([
+    [`<img src="images/p3/p3_1e938da7ec7f.webp" alt="Code excerpt — core logic">`, "Code excerpt — core logic"],
+    [`<img src="images/p3/p3_8ca7e270abf0.webp" alt="Interaction — swatting">`, "Interaction — swatting"],
+    [`<img src="images/p3/p3_8d45398b40e9.webp" alt="Interaction process 2">`, "Interaction process 2"],
+    [`<img src="images/p3/p3_6df60b310e94.webp" alt="Interaction process 1">`, "Interaction process 1"],
+    [`<img src="images/p3/p3_9ac2457af0e7.webp" alt="Installation props">`, "Installation props"],
+    [`<img src="images/p3/p3_2fa2caff2561.webp" alt="Final visual result 2">`, "Final visual result 2"],
+    [`<img src="images/p3/p3_18c09242fd45.webp" alt="Final visual result 1">`, "Final visual result 1"]
+  ])}
+  ${rule()}
+  <h3 class="m-h3">Presentation Video</h3>
+  <div class="vid-local rv" onclick="window.open('https://youtu.be/oHNaWbywsi8','_blank')">
+    <div class="vid-local-poster">
+      <img class="vid-local-cover" src="images/p3/p3_361037e69f79.webp" alt="">
+      <div class="vid-local-overlay">
+        <div class="vid-play-lrg">
+          <svg width="20" height="20" viewBox="0 0 16 16" fill="rgba(26,26,24,.85)"><polygon points="5,3 14,8 5,13"/></svg>
+        </div>
+        <span class="vid-tooltip">Play video</span>
+      </div>
+    </div>
+  </div>
+`, }; const PKEY='p3';
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
