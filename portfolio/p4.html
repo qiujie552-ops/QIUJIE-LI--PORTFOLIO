@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>实习经历</title>
+<title>Internship Experience</title>
 <style>
 @font-face {
   font-family: 'Caveat';
@@ -16,7 +16,7 @@
 <style>
 
 /* ═══════════════════════════════════════════
-   DESIGN TOKENS  — 统一设计系统
+   DESIGN TOKENS  — Unified Design System
 ═══════════════════════════════════════════ */
 :root{
   /* Color */
@@ -564,7 +564,7 @@ footer{
 .sheet-body::-webkit-scrollbar{width:3px}
 .sheet-body::-webkit-scrollbar-thumb{background:var(--line);border-radius:2px}
 
-/* 内容居中容器 */
+/* Centered content container */
 .m-wrap{
   max-width:1100px;
   margin:0 auto;
@@ -575,7 +575,7 @@ footer{
   font-size:11px;color:var(--ink3);letter-spacing:.1em;font-weight:400;
   text-transform:uppercase;margin-bottom:var(--sp-xs);
 }
-/* 鈹€鈹€ type system 鈹€鈹€ */
+/* ── type system ── */
 .m-p strong,.m-lead strong{color:var(--ink);font-weight:600;}
 
 .m-title{
@@ -614,7 +614,7 @@ footer{
 .m-ul li::before{
   content:'·';position:absolute;left:4px;color:var(--ink3);font-weight:700;
 }
-/* 三栏用户/情景/竞品 */
+/* Three-column user / scenario / competitor layout */
 .usc-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   gap:16px;margin:var(--sp-sm) 0 var(--sp-lg);
@@ -631,7 +631,7 @@ footer{
   border-bottom:1.5px solid rgba(26,26,24,.1);
   flex-shrink:0;margin-bottom:12px;
 }
-/* 记事板图片区 — 自包含，不溢出 */
+/* Pin-board image area — self-contained, with no overflow */
 .pin-board{
   display:flex;gap:8px;width:100%;
   justify-content:center;align-items:flex-start;
@@ -647,7 +647,7 @@ footer{
   object-fit:contain;
 }
 .pin-img:hover{transform:rotate(0deg) scale(1.05)!important;}
-/* 竞品截图区 — 两张并排，logo贴左上角 */
+/* Competitor screenshot area — two side by side, with the logo pinned to the top left */
 .comp-shots{
   display:flex;gap:8px;margin-bottom:6px;flex-shrink:0;
 }
@@ -674,7 +674,7 @@ footer{
   padding:3px;object-fit:contain;
   box-shadow:0 1px 4px rgba(0,0,0,.18);
 }
-/* 竞品文字区 */
+/* Competitor text area */
 .comp-block{ margin-bottom:24px; }
 .comp-name{
   font-size:15px;font-weight:700;color:#000;margin:0 0 8px;
@@ -688,7 +688,7 @@ footer{
   margin:6px 0 3px;
 }
 .comp-pro,.comp-con{color:var(--ink3);}
-/* 编号列表 — 实心小圆 */
+/* Numbered list — solid dots */
 .m-ol{
   list-style:none;padding:0;margin:0 0 4px;
 }
@@ -852,7 +852,7 @@ footer{
 }
 
 /* ═══════════════════════════════════════════
-   PHONE MOCKUP  (芽芽圈 screens)
+   PHONE MOCKUP  (Bud Loop screens)
 ═══════════════════════════════════════════ */
 .phones{
   display:flex;gap:var(--sp-md);margin:var(--sp-md) 0;
@@ -1078,7 +1078,7 @@ body::after{
 }
 
 
-/* ── 调研访谈：访谈照片 ── */
+/* ── Research interviews: interview photos ── */
 .itv-row{
   display:flex;gap:14px;margin-bottom:24px;align-items:stretch;
 }
@@ -1091,7 +1091,7 @@ body::after{
 .itv-img{
   width:100%;height:auto;display:block;flex:1;object-fit:cover;
 }
-/* 访谈角标 */
+/* Interview badge */
 .itv-badge{
   position:absolute;top:10px;left:10px;
   display:inline-block;
@@ -1110,12 +1110,12 @@ body::after{
 }
 .itv-date{font-size:11px;color:rgba(0,0,0,.38);letter-spacing:.02em;}
 .itv-name{font-size:13px;font-weight:600;color:var(--ink1);}
-/* ── 图表占位 ── */
+/* ── Chart placeholder ── */
 .itv-charts-placeholder{
   background:rgba(0,0,0,.025);border-radius:10px;
   border:2px dashed rgba(0,0,0,.1);margin-bottom:16px;
 }
-/* ── 总结 ── */
+/* ── Summary ── */
 .itv-summary{
   background:rgba(0,0,0,.025);border-radius:10px;
   padding:16px 20px;border-left:3px solid var(--accent);margin-bottom:8px;
@@ -1123,7 +1123,7 @@ body::after{
 .itv-summary-text{font-size:14px;line-height:1.75;color:var(--ink2);}
 
 
-/* ── 图表图片行 ── */
+/* ── Chart image row ── */
 .chart-img-row{
   display:flex;gap:14px;margin-bottom:16px;align-items:stretch;
 }
@@ -1147,7 +1147,7 @@ body::after{
 }
 
 
-/* ── 中期测试 test-board ── */
+/* ── Mid-stage testing test board ── */
 .test-board{
   position:relative;
   background:#fff;
@@ -1162,7 +1162,7 @@ body::after{
   padding:12px 4px 16px;
   overflow:hidden;
 }
-/* 等比缩放，等高，不超出卡片 */
+/* Scale proportionally, keep equal height, and stay within the card */
 .test-board .pin-img{
   flex:1 1 0 !important;
   min-width:0 !important;
@@ -1179,16 +1179,16 @@ body::after{
 .test-sub-row{
   display:flex;gap:24px;margin-top:24px;align-items:flex-start;
 }
-/* 左列：两张小图交叉叠放 */
+/* Left column: two small images overlap */
 .test-sub-left{
   flex:1;min-width:0;
   display:flex;flex-direction:column;align-items:flex-start;
 }
-/* 右列：升级大图 */
+/* Right column: upgraded large image */
 .test-sub-right{
   flex:2;min-width:0;
 }
-/* wrap：钉子 + 倾斜 */
+/* Wrapper: pin + rotation */
 .test-sub-img-wrap{
   width:55%;
   position:relative;
@@ -1202,7 +1202,7 @@ body::after{
   box-shadow:0 1px 3px rgba(0,0,0,.28);
   z-index:2;
 }
-/* 第一张：靠左，向左倾 */
+/* First image: left-aligned and tilted left */
 .test-sub-left .test-sub-img-wrap:first-child{
   align-self:flex-start;
   transform:rotate(-5deg);
@@ -1210,14 +1210,14 @@ body::after{
   z-index:1;
   margin-bottom:-28px;
 }
-/* 第二张：靠右，向右倾，压上 */
+/* Second image: right-aligned, tilted right, and overlapping */
 .test-sub-left .test-sub-img-wrap:last-child{
   align-self:flex-end;
   transform:rotate(4.5deg);
   transform-origin:right bottom;
   z-index:2;
 }
-/* 记事板小图 */
+/* Pin-board thumbnail */
 .test-sub-img{
   display:block;width:100%;height:auto;
   background:#fff;
@@ -1226,7 +1226,7 @@ body::after{
   box-shadow:0 3px 14px rgba(0,0,0,.15),0 1px 3px rgba(0,0,0,.08);
   box-sizing:border-box;
 }
-/* 升级大图：无衬底，完整显示 */
+/* Upgraded large image: no backing, displayed in full */
 .test-sub-right .test-sub-img-wrap{
   width:100%;
 }
@@ -1250,20 +1250,20 @@ body::after{
   box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
-/* ── 初期架构 pin-wall ── */
+/* ── Early-stage architecture pin wall ── */
 .pinwall{
   padding:8px 4px 4px;
   display:flex;flex-direction:column;gap:28px;
   overflow:visible;
 }
-/* 散落行（流程1/2/3）*/
+/* Scattered row (flows 1/2/3) */
 .pinwall-row-scatter{
   display:flex;gap:0;align-items:flex-start;
   justify-content:center;
   overflow:visible;
   padding:16px 0 24px;
 }
-/* 底部行（信息架构+lofi）*/
+/* Bottom row (information architecture + lo-fi) */
 .pinwall-row{
   display:flex;gap:20px;align-items:flex-end;
 }
@@ -1299,7 +1299,7 @@ body::after{
   border-radius:2px;
 }
 
-/* lofi / 无衬底 pin-photo */
+/* lo-fi / pin-photo without backing */
 .pin-photo--plain{
   background:transparent;
   padding:0;
@@ -1440,7 +1440,7 @@ const vidph=(t,thumb,yt)=>{const ytUrl=yt||'https://youtu.be/CJ0dhJxfUqA';return
 ═══════════════════════════════════════════ */
 
 const P={
-/* ── 理想汽车 ── */
+/* ── Li Auto ── */
 p4:`
 <style>
 .sticky-notes{display:flex;gap:28px;margin:36px 0 20px;align-items:flex-start;}
@@ -1457,7 +1457,7 @@ p4:`
 .sticky:hover{transform:rotate(0deg) translateY(-6px);box-shadow:4px 14px 32px rgba(0,0,0,.30),0 0 28px rgba(174,195,230,.60),0 0 52px rgba(160,185,220,.28);z-index:2;}
 .sticky-title{font-size:13px;font-weight:700;color:#1A1A18;margin-bottom:10px;letter-spacing:-.01em;flex-shrink:0;}
 .sticky-body{font-size:12px;color:rgba(26,26,24,.78);line-height:1.8;flex:1;}
-/* ── 图片暗色卡片 ── */
+/* ── Image dark card ── */
 .img-dark-card{
   background:#1A1A18;border-radius:10px;padding:16px;margin:12px 0;
   box-shadow:0 2px 8px rgba(0,0,0,.4);
@@ -1472,12 +1472,12 @@ p4:`
 .bm-overlay{position:absolute;inset:0;pointer-events:none;}
 
 </style>
-<p class="m-cat">实习经历 · 交互设计 · Vibe Coding · 产品原型 · 动效设计 · B端系统</p>
-<h2 class="m-title">理想汽车-交互设计</h2>
-<p class="m-p" style="margin-bottom:0.4em;margin-top:1.2em"><strong>从 0 到 1 的销售Agent项目</strong>：针对一线销售信息分散、重复劳动等痛点，参与 AI 驱动的销售助手产品设计和交互设计，3个月完成从产品 Demo 原型到一期设计交付的全过程。对特定交互进行视觉及动效方案探索、vibecoding搭建产品介绍官网。</p>
-<p class="m-p" style="margin-bottom:0.4em"><strong>AI 提效</strong>： 探索各AI设计及原型工具，将 AI 工作流与传统工作流深度结合。运用 Claude code 等工具搭建部门内部的设计系统skill，提升AI产品原型过程中的品牌规范。</p>
-<p class="m-p" style="margin-bottom:0.4em"><strong>全端 App 迭代</strong>： 负责销售App在手机端、Pad工作端、PC 管理端的功能迭代与升级，确保全国零售体系内的工作效率和品牌一致性。</p>
-<p class="m-p" style="margin-bottom:0.4em"><strong>运营视觉支持</strong>： 兼顾高质量运营设计，包括勋章及活动海报等。并向运营伙伴进行AI工具图像辅助工作的分享。</p>
+<p class="m-cat">Internship Experience · Interaction Design · Vibe Coding · Product Prototyping · Motion Design · B2B Systems</p>
+<h2 class="m-title">Li Auto — Interaction Design</h2>
+<p class="m-p" style="margin-bottom:0.4em;margin-top:1.2em"><strong>Building a Sales Agent from 0 to 1</strong>: Addressing pain points such as fragmented information and repetitive work for frontline sales teams, I contributed to the product and interaction design of an AI-powered sales assistant. Over 3 months, I was deeply involved in the full process from the product Demo prototype to the first-phase design handoff. I also explored visual and motion-design solutions for specific interactions and built the product-introduction website through vibe coding.</p>
+<p class="m-p" style="margin-bottom:0.4em"><strong>AI Productivity</strong>: Explored a range of AI design and prototyping tools to deeply integrate AI workflows with traditional workflows. Used tools such as Claude Code to build an in-house design-system Skill for the department, improving adherence to brand standards during AI product prototyping.</p>
+<p class="m-p" style="margin-bottom:0.4em"><strong>Multi-Platform App Iteration</strong>: Led feature iterations and upgrades for the Sales App across mobile, Pad workstations, and PC management portals, ensuring operational efficiency and brand consistency throughout the nationwide retail system.</p>
+<p class="m-p" style="margin-bottom:0.4em"><strong>Operational Visual Support</strong>: Delivered high-quality operational design, including badges and campaign posters, and shared AI-assisted image-work practices with operations partners.</p>
 
 ${rule()}
 <style>
@@ -1497,28 +1497,28 @@ ${rule()}
 </style>
 <div class="info-header">
   <div class="info-header-text">
-    <h3 class="m-h3">AI销售助手</h3>
-    <p class="m-p" style="margin-top:0.4em;margin-bottom:0">针对一线销售信息分散、重复劳动等痛点，设计一款 AI 驱动的销售助手。3 个月深度参与并完成从产品 Demo 原型到一期设计交付全过程。</p>
+    <h3 class="m-h3">AI Sales Assistant</h3>
+    <p class="m-p" style="margin-top:0.4em;margin-bottom:0">Designed an AI-powered sales assistant to address pain points such as fragmented information and repetitive work for frontline sales teams. Over 3 months, I was deeply involved in and completed the full process from the product Demo prototype to the first-phase design handoff.</p>
   </div>
   <img class="info-logo-img" src="images/p4/p4_52ad1ea52e4f.webp" alt="Logo">
 </div>
 <div class="info-cards rv">
   <div class="info-card">
-    <p class="info-card-title">痛点 &amp; 背景</p>
+    <p class="info-card-title">Pain Points &amp; Context</p>
     <ul class="info-card-list">
-      <li>销售每日需在多个系统间切换查询：车型配置、客户跟进记录、库存状态</li>
-      <li>重复性话术占据大量精力，缺乏实时的智能辅助</li>
-      <li>新员工上手周期长，知识沉淀分散</li>
+      <li>Sales staff must switch among multiple systems daily to look up vehicle configurations, customer follow-up records, and inventory status.</li>
+      <li>Repetitive scripts consume substantial effort, with no real-time intelligent assistance.</li>
+      <li>New employees have a long ramp-up period, while accumulated knowledge is scattered.</li>
     </ul>
   </div>
   <div class="info-card" style="flex:1.7">
-    <p class="info-card-title">我的角色</p>
+    <p class="info-card-title">My Role</p>
     <ul class="info-card-list">
-      <li>参与目标人群（销售专家）和 AI 竞品调研</li>
-      <li>参与产品 Demo 阶段的流程梳理与原型设计，运用各种 AI 工具产出可交互产品原型</li>
-      <li>负责核心流程的交互设计、细节多态、品牌视觉、logo 设计与动效探索</li>
-      <li>独立完成产品介绍官网的 vibe coding 搭建</li>
-      <li>协助完成一期设计的评审、交付、走查</li>
+      <li>Contributed to research on the target audience (sales experts) and AI competitors.</li>
+      <li>Contributed to workflow mapping and prototype design during the product Demo stage, using a range of AI tools to create interactive product prototypes.</li>
+      <li>Led interaction design for core flows, detailed UI states, brand visuals, logo design, and motion exploration.</li>
+      <li>Independently built the product-introduction website through vibe coding.</li>
+      <li>Assisted with the review, handoff, and design QA for the first-phase design.</li>
     </ul>
   </div>
 </div>
@@ -1529,7 +1529,7 @@ ${hscrollLabeled([
   ['<img src="images/p4/p4_215307c64a1a.webp" style="height:200px;width:auto;border-radius:8px;display:block;">',''],
   ['<img src="images/p4/p4_ddc7367c6f0a.webp" style="height:200px;width:auto;border-radius:8px;display:block;">',''],
   ['<img src="images/p4/p4_32f71ceba441.webp" style="height:200px;width:auto;border-radius:8px;display:block;">','']
-],'部分产品原型')}
+],'Selected Product Prototypes')}
 ${hscrollLabeled([
   ['<img src="images/p4/p4_ddb235c8dba8.webp" style="height:200px;width:auto;border-radius:8px;display:block;">',''],
   ['<img src="images/p4/p4_0c8e84976903.webp" style="height:200px;width:auto;border-radius:8px;display:block;">',''],
@@ -1537,7 +1537,7 @@ ${hscrollLabeled([
   ['<img src="images/p4/p4_94efa19faa90.webp" style="height:200px;width:auto;border-radius:8px;display:block;">',''],
   ['<img src="images/p4/p4_4a882ff32988.webp" style="height:200px;width:auto;border-radius:8px;display:block;">',''],
   ['<img src="images/p4/p4_ee15ae474fa1.webp" style="height:200px;width:auto;border-radius:8px;display:block;">','']
-],'部分设计稿')}
+],'Selected Design Screens')}
 
 <style>
 .site-section{margin-top:2.4em;}
@@ -1554,9 +1554,9 @@ ${hscrollLabeled([
 .site-link:hover{color:var(--ink2);border-color:rgba(255,255,255,.5);}
 </style>
 <div class="site-section rv">
-  <h3 class="m-h3">产品介绍官网（Vibe Coding 产出）</h3>
-  <p class="m-p" style="margin-top:0.5em;margin-bottom:0.3em">使用 Claude Code 进行 vibe coding，独立搭建销售 Agent 的产品介绍 H5 官网。</p>
-  <p class="m-p" style="margin-bottom:0;">链接（非最终版本）：<a class="site-link" href="https://qiujie552-ops.github.io/sales-agent/" target="_blank">qiujie552-ops.github.io/sales-agent/</a></p>
+  <h3 class="m-h3">Product-Introduction Website (Built with Vibe Coding)</h3>
+  <p class="m-p" style="margin-top:0.5em;margin-bottom:0.3em">Used Claude Code for vibe coding to independently build the Sales Agent product-introduction H5 website.</p>
+  <p class="m-p" style="margin-bottom:0;">Link (non-final version): <a class="site-link" href="https://qiujie552-ops.github.io/sales-agent/" target="_blank">qiujie552-ops.github.io/sales-agent/</a></p>
   <div class="site-gallery">
     <div class="site-img-card"><img src="images/p4/p4_220121ddfbc5.webp" alt=""></div>
     <div class="site-img-card"><img src="images/p4/p4_d39db8b48f9d.webp" alt=""></div>
@@ -1601,33 +1601,33 @@ ${rule()}
 }
 </style>
 <div class="ai-section rv">
-  <h3 class="m-h3">AI 提效</h3>
-  <!-- 文件夹小插画 -->
+  <h3 class="m-h3">AI Productivity</h3>
+  <!-- Small folder illustration -->
   <svg class="ai-folder-illus" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <!-- 文件夹背板 -->
+    <!-- Folder backing -->
     <rect x="6" y="22" width="60" height="42" rx="6" fill="#E8EAF0" stroke="#C8CADE" stroke-width="1.5"/>
-    <!-- 文件夹标签 -->
+    <!-- Folder tab -->
     <path d="M6 22 C6 22 6 16 12 16 L28 16 C31 16 33 19 33 19 L66 19 C66 19 66 22 66 22 Z" fill="#D0D4E8" stroke="#C8CADE" stroke-width="1.5" stroke-linejoin="round"/>
-    <!-- 文件夹内部阴影线 -->
+    <!-- Internal folder shadow lines -->
     <rect x="14" y="30" width="20" height="3" rx="1.5" fill="#B8BDD4" opacity="0.6"/>
     <rect x="14" y="37" width="32" height="3" rx="1.5" fill="#B8BDD4" opacity="0.4"/>
     <rect x="14" y="44" width="26" height="3" rx="1.5" fill="#B8BDD4" opacity="0.3"/>
-    <!-- 小文件图标 -->
+    <!-- Small file icon -->
     <rect x="44" y="28" width="14" height="18" rx="2" fill="#fff" stroke="#C8CADE" stroke-width="1.2"/>
     <path d="M50 28 L50 34 L58 34" stroke="#C8CADE" stroke-width="1.2" fill="none"/>
     <path d="M50 28 L58 34" stroke="#C8CADE" stroke-width="1.2" fill="none"/>
   </svg>
   <div class="ai-text-card">
-    <p>26年初，AI 工具快速发展情况下，团队在原型阶段遇到了两个实际问题：用 AI 生成的界面缺乏品牌规范，以及部分工具的产出物难以被设计师直接接手修改。重复解释规范、来回返工，消耗了大量沟通成本。</p>
-    <p>为此我主动探索了多款 AI 设计与原型工具——包括 v0、Cursor、Pencil、Gem Design、Mastergo 等10余种工具，整理成评测报告在内部分享，帮助团队建立新工作流工具选择的判断。</p>
-    <p>我还分析了公司设计系统的 Figma 组件库结构，提取颜色、组件、文字、间距等品牌规则与核心规范，将其转化为可被 Claude Code 直接读取的 Skill。Skill 分为三层：全局设计规则、组件使用规范、代码示例。接入工作流后，AI 生成的原型代码能够自动对齐品牌规范，减少了产品、设计、研发之间因"规范不一致"引发的反复沟通，也能在新产品/新功能的前期工作中更直观的看到产品效果。</p>
+    <p>At the beginning of 2026, amid the rapid development of AI tools, the team encountered two practical issues during the prototyping stage: AI-generated interfaces lacked brand standards, and outputs from some tools were difficult for designers to take over and edit directly. Repeatedly explaining standards and reworking outputs created substantial communication overhead.</p>
+    <p>To address this, I proactively explored more than 10 AI design and prototyping tools, including v0, Cursor, Pencil, Gem Design, and Mastergo. I compiled the findings into an evaluation report and shared it internally, helping the team make informed choices about tools for new workflows.</p>
+    <p>I also analyzed the structure of the company design system’s Figma component library, extracted brand rules and core standards for color, components, typography, spacing, and more, and converted them into a Skill that Claude Code can read directly. The Skill has three layers: global design rules, component-usage guidelines, and code examples. Once integrated into the workflow, AI-generated prototype code automatically aligns with brand standards, reducing repeated communication among product, design, and engineering caused by “inconsistent standards” and making product outcomes more visible during early work on new products and features.</p>
   </div>
 </div>
 
 ${rule()}
-<h3 class="m-h3">销售 App 三端迭代</h3>
+<h3 class="m-h3">Sales App Iteration Across Three Platforms</h3>
 <div class="ai-text-card rv" style="margin-top:1em;">
-  <p>负责销售 App 在手机端、Pad 工作端、PC 管理端的功能迭代与升级，保证全国零售体系内的工作效率和品牌一致性。</p>
+  <p>Led feature iterations and upgrades for the Sales App across mobile, Pad workstations, and PC management portals, ensuring operational efficiency and brand consistency throughout the nationwide retail system.</p>
 </div>
 ${hscrollLabeled([
   ['<img src="images/p4/p4_6917107cffa7.webp" style="height:200px;width:auto;border-radius:8px;display:block;">',''],
@@ -1642,7 +1642,7 @@ ${hscrollLabeled([
   ['<img src="images/p4/p4_ed8e3f97bb86.webp" style="height:200px;width:auto;border-radius:8px;display:block;">',''],
   ['<img src="images/p4/p4_c46756b28caf.webp" style="height:200px;width:auto;border-radius:8px;display:block;">',''],
   ['<img src="images/p4/p4_da4c6c97d55d.webp" style="height:200px;width:auto;border-radius:8px;display:block;">','']
-],'部分设计稿')}
+],'Selected Design Screens')}
 
 
 `,
