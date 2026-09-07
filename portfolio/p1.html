@@ -1191,8 +1191,8 @@ body::after{
 .testing-gallery{
   display:grid;
   scroll-margin-top:72px;
-  grid-template-columns:minmax(220px,.82fr) minmax(0,2.18fr);
-  gap:clamp(20px,3.2vw,42px);
+  grid-template-columns:minmax(280px,1.08fr) minmax(0,1.92fr);
+  gap:clamp(20px,2.8vw,34px);
   align-items:center;
   margin-top:30px;
   padding:clamp(18px,3vw,34px);
@@ -1206,19 +1206,26 @@ body::after{
 .testing-stack{
   display:flex;
   flex-direction:column;
-  gap:2px;
+  gap:0;
   min-width:0;
 }
 .testing-stack .testing-card:first-child{
-  width:88%;
+  width:94%;
   align-self:flex-start;
   --tilt:-4deg;
 }
 .testing-stack .testing-card:last-child{
-  width:88%;
+  width:94%;
   align-self:flex-end;
-  margin-top:-8px;
+  margin-top:-22px;
   --tilt:3.25deg;
+}
+.testing-stack .testing-card{
+  padding:38px 10px 10px;
+}
+.testing-stack .testing-tag{
+  top:10px;
+  left:-8px;
 }
 .testing-feature{
   min-width:0;
@@ -1730,24 +1737,16 @@ ${rule()}
 <div id="testing-gallery" class="testing-gallery rv" aria-label="Mid-stage testing materials and design iterations">
   <div class="testing-stack">
     <figure class="testing-card">
+      <span class="testing-tag">Test script</span>
       <div class="testing-media">
-        <span class="testing-tag">Test script</span>
         <img src="images/p1/p1_test_script.webp" width="982" height="779" loading="lazy" decoding="async" alt="Test script with four parent-focused user scenarios">
       </div>
-      <figcaption class="testing-caption">
-        <strong>Scenario planning</strong>
-        <span>01 / INPUT</span>
-      </figcaption>
     </figure>
     <figure class="testing-card">
+      <span class="testing-tag">Usability test</span>
       <div class="testing-media">
-        <span class="testing-tag">Usability test</span>
         <img src="images/p1/p1_usability_testing.webp" width="935" height="750" loading="lazy" decoding="async" alt="Usability testing matrix and four prioritized findings">
       </div>
-      <figcaption class="testing-caption">
-        <strong>Issue synthesis</strong>
-        <span>02 / FINDINGS</span>
-      </figcaption>
     </figure>
   </div>
   <div class="testing-feature">
@@ -1756,10 +1755,6 @@ ${rule()}
         <span class="testing-tag">Design iterations</span>
         <img src="images/p1/p1_iterations.webp" width="2048" height="1446" loading="lazy" decoding="async" alt="Low-fidelity mobile interface iterations responding to usability findings">
       </div>
-      <figcaption class="testing-caption">
-        <strong>From findings to interface improvements</strong>
-        <span>03 / ITERATION</span>
-      </figcaption>
     </figure>
   </div>
 </div>
